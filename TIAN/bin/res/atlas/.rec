@@ -1,0 +1,174 @@
+D .
+R 39B957DA texture.png
+D comp
+P 316AD948 btn_close.png
+P 5B258D17 button.png
+P 1F3929EA button1.png
+P 3C493DD4 check_circle.png
+P 98E54F0D checkbox.png
+P 6B7AB858 clip_num.png
+P 63A22FAC clip_tree_arrow.png
+P D749C312 clip_tree_folder.png
+P 704C5D70 combobox.png
+P D566AE8B fontClip.png
+P 38AB8F3F fontClip_num.png
+P 6EF336AE hscroll$bar.png
+P 7FF47AC5 hscroll$down.png
+P 3D7B147A hscroll$up.png
+P 750BD445 hscroll.png
+P 9A5EF899 hslider$bar.png
+P 9CED7132 hslider.png
+P BA2A0579 html.png
+P 8236CD48 image.png
+P 4ACB7AEF img_bg.png
+P FCD04607 img_bg2.png
+P 23FB4D29 img_bg3.png
+P 5FD17798 img_bg4.png
+P 2BE22124 img_bg5.png
+P BA28BD65 img_blank.png
+P BA2A0579 label.png
+P B017E53E progress$bar.png
+P C05839CD progress.png
+P 3C493DD4 radio.png
+P 3C493DD4 radiogroup.png
+P 5BA25C15 tab.png
+P A3D7A036 textarea.png
+P A3D7A036 textinput.png
+P 2DCE1DF9 vscroll$bar.png
+P 6FE7EA34 vscroll$down.png
+P 0587871F vscroll$up.png
+P 5FD17798 vscroll.png
+P DDDDFB9E vslider$bar.png
+P 01BAE7F5 vslider.png
+D door
+P 75D8883E d1.png
+P 0E54EF36 d2.png
+P 773B5203 d3.png
+P E4239180 d4.png
+P 4F2B1034 d5.png
+P 821E2EAD d6.png
+P 1ACC962E d7.png
+P 8C98B90E d8.png
+D logn
+P 4D64320E talk1.png
+P DCE58CA5 talk2.png
+D music
+D npc
+D player
+P 94E401B7 a1.png
+P EC304B10 a2.png
+P D407402F a3.png
+P 46FDBCEA a4.png
+P 44C1DDCD a5.png
+P 3FF30BEF a6.png
+P 5C3C71F5 a7.png
+P 53E03AAB a8.png
+P 61F9C42D b1.png
+P A95C0CF1 b2.png
+P 61F9C42D b3.png
+P 3197C06D b4.png
+P 85BD4E22 b5.png
+P F877C7CB b6.png
+P BE516438 b7.png
+P 49D9D246 b8.png
+P 554582B9 l1.png
+P E47EAFEE l2.png
+P 3DCEA108 l3.png
+P A5A02C45 l4.png
+P 9C861791 l5.png
+P D52E518B l6.png
+P 82F360A5 l7.png
+P A5A02C45 l8.png
+P 27E4224B p1.png
+P 9BFD33AC p2.png
+P 57437854 p3.png
+P 88F81AC4 p4.png
+P 27E4224B p5.png
+P D0F4EA11 p6.png
+P D32D59CD p7.png
+P 7EC30F7E p8.png
+P 91780DE8 r1.png
+P FDBC9757 r2.png
+P 8602D8C7 r3.png
+P D36F4872 r4.png
+P E986A8DB r5.png
+P 3A11FD43 r6.png
+P 94214319 r7.png
+P D36F4872 r8.png
+P 8F600D9F t1.png
+P 91B3C684 t2.png
+P CF6259D9 t3.png
+P AAE2A462 t4.png
+P CF6259D9 t5.png
+P F0369944 t6.png
+P D218C1D6 t7.png
+P 8F600D9F t8.png
+P C7185752 tr1.png
+P FEC6664B tr2.png
+P 7B005B8B tr3.png
+P 9FF9C9F5 tr4.png
+P 39BF76F7 tr5.png
+P D15054CF tr6.png
+P 1A4C4938 tr7.png
+P 9B4BD68B tr8.png
+D playInfor
+R EBC91D7F infor1.png
+P D4EA9593 money.png
+D say
+P D3EF1D5F npc1.png
+P 822B7F4B play1.png
+D sence
+R 943E02AC say.png
+R 4B053DA5 sence1.png
+R AB84037C senceHouse1.png
+D start
+P 79D91C73 chapter.png
+P 54E84470 logn.png
+R 299726F7 StartBg.png
+D texiao
+P 2F56E583 attack1_0 (1).png
+P 7514963B attack1_0 (2).png
+P 78A07077 attack1_0 (3).png
+P ADD77D84 attack1_0 (4).png
+P 527F6998 attack1_0 (5).png
+P 3CD7A1CA attack1_0 (6).png
+P 35562165 comp1_00000.png
+P 5E4B3157 comp1_00001.png
+P E7DD59D2 comp1_00002.png
+P CA8C8549 comp1_00003.png
+P F3F2EBC3 comp1_00004.png
+P E51E8714 comp1_00005.png
+P BE2A1FAC comp1_00006.png
+P 6EE2A45E comp1_00007.png
+P CAABD1B9 comp1_00008.png
+P FD70A4EA comp1_00009.png
+D zhandou
+R 8F88F4AB bg1.png
+P AC233FB1 choise.png
+P 097AFA54 hp.png
+P 379BC066 mp.png
+P FB9CF98D per1.png
+P 6CC88920 sp.png
+D music/bg
+R F3DD0DCE sence1bg.mp3
+R 25717414 startBg.mp3
+D music/playBattle
+R 2CA6618E attack.mp3
+D npc/sence1
+D npc/sence1/npc1
+P 55AB116C l1.png
+P F9BABB27 l2.png
+P 55AB116C l3.png
+P 75740629 l4.png
+R D5254295 PX_93 - 副本.png
+P 0DEFA528 t1.png
+P 787DA346 t2.png
+P 56C758F7 t3.png
+P 53D6CCC5 t4.png
+P E867FA3D u1.png
+P BA8E5880 u2.png
+P DC180613 u3.png
+P 2460207A u4.png
+D npc/sence1/npc2
+P 21214A44 npc2.png
+P CCF923FC npcbody.png

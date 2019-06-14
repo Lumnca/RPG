@@ -1,0 +1,6 @@
+<page>
+   <item name="gameSence1.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="Sence1.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="say.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="Battle.scene" props="" ifExport="分离模式" aName=""/>
+</page>

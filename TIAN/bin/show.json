@@ -1,0 +1,1 @@
+{"type":"Scene","props":{"width":1200,"name":"show","height":960},"compId":2,"child":[{"type":"Particle2D","props":{"y":458,"x":508,"url":"love.part","name":"show1","autoPlay":true,"runtime":"laya.particle.Particle2D"},"compId":6}],"loadList":[],"loadList3D":[]}
