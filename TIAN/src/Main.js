@@ -59,6 +59,8 @@ player1.name = '云傲天';
 player1.start  = false;
 window.player = player1;
 
+player1.gj = 100;
+player1.fy = 50;
 
 
 

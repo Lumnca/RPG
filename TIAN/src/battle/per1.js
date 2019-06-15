@@ -21,6 +21,8 @@ export default class per1 extends Laya.Sprite {
         emety.ssp = 0;
         emety.shp = 1000;
         emety.smp = 200;
+        emety.gj = 110;
+        emety.fy = 60;
         emety.name = '小商贩';
         emety.start = false;
         window.emetys = emety;
@@ -43,7 +45,11 @@ export default class per1 extends Laya.Sprite {
             Laya.timer.frameOnce(200,this,attShow);
 
             function attShow(){
-                var hurt = Math.floor(Math.random()*50+1);
+
+                this.parent.parent.getChildByName('infors').getChildByName('txt').text =window.emetys.name+  '使用了普通攻击';
+
+                var hurt = Math.floor((Math.random()*50+window.emetys.gj)*(1-window.player.fy/1000));
+
                 window.player.shp-=hurt;
                 window.player.ssp+=12;
                 this.parent.parent.getChildByName('player').getChildByName('attacked').visible = true;

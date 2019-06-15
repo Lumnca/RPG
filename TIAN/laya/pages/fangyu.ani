@@ -5,11 +5,11 @@
     "searchKey":"View",
     "props":{"sceneWidth":600,"sceneHeight":400,"sceneColor":"#000000"},
     "nodeParent":-1,
-    "maxID":3,
+    "maxID":4,
     "label":"View",
-    "isDirectory":false,
+    "isDirectory":true,
     "isAniNode":true,
-    "hasChild":false,
+    "hasChild":true,
     "compId":2,
     "child":[
         {
@@ -33,7 +33,7 @@
                     "keyframes":{
                         "y":[
                             {
-                                "value":-109,
+                                "value":-200,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":3,
@@ -42,11 +42,20 @@
                             }],
                         "x":[
                             {
-                                "value":-117,
+                                "value":-200,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":3,
                                 "key":"x",
+                                "index":0
+                            }],
+                        "width":[
+                            {
+                                "value":400,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":3,
+                                "key":"width",
                                 "index":0
                             }],
                         "skin":[
@@ -129,6 +138,15 @@
                                 "target":3,
                                 "key":"skin",
                                 "index":9
+                            }],
+                        "height":[
+                            {
+                                "value":400,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":3,
+                                "key":"height",
+                                "index":0
                             }]
                     }
                 }],
