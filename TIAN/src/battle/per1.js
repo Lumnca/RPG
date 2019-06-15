@@ -40,9 +40,26 @@ export default class per1 extends Laya.Sprite {
     attackPlayer(){
         if(window.emetys.start){
             window.emetys.start = false;
-            window.player.start = true;
-            this.parent.parent.getChildByName('infors').getChildByName('txt').text = '对方回合';
-            this.parent.parent.getChildByName('Select').getChildByName('playAttack').onAwake();
+            Laya.timer.frameOnce(200,this,attShow);
+
+            function attShow(){
+                var hurt = Math.floor(Math.random()*50+1);
+                window.player.shp-=hurt;
+                window.player.ssp+=12;
+                this.parent.parent.getChildByName('player').getChildByName('attacked').visible = true;
+                this.parent.parent.getChildByName('player').getChildByName('attacked').play(0,true,'attacked');
+                Laya.SoundManager.playSound('../laya/assets/music/playBattle/attack.mp3');
+                Laya.timer.frameOnce(100,this,stop);
+
+                function stop(){
+                    this.parent.parent.getChildByName('player').getChildByName('attacked').gotoAndStop(5);
+                    this.parent.parent.getChildByName('player').getChildByName('attacked').visible = false;
+                    this.parent.parent.getChildByName('infors').getChildByName('txt').text = window.emetys.name+ '对你造成了' +hurt + '点伤害';
+                    this.parent.parent.getChildByName('Select').getChildByName('playAttack').onAwake();
+                }
+
+            }
+
         }
         else{
             
@@ -57,7 +74,8 @@ export default class per1 extends Laya.Sprite {
             }
     }
     isAttacked(){
-        if(window.player.start){
+        if(window.player.start===true){
+            window.player.start = false;
             this.parent.parent.getChildByName('Select').getChildByName('playAttack').attackEmety();
         }
 

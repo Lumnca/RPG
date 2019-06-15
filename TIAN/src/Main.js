@@ -56,7 +56,7 @@ player1.smp = 100;
 player1.ssp = 0;
 player1.sp = 100;
 player1.name = '云傲天';
-player1.start = true;
+player1.start  = false;
 window.player = player1;
 
 

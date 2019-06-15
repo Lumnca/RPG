@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":14,
-    "selecteID":35,
+    "selectedBox":33,
+    "selecteID":10,
     "searchKey":"Scene",
     "props":{"width":1280,"sceneColor":"#000000","height":600},
     "nodeParent":-1,
-    "maxID":36,
+    "maxID":41,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -21,6 +21,7 @@
             "props":{"y":63,"x":312,"texture":"zhandou/bg1.png"},
             "nodeParent":2,
             "label":"Sprite",
+            "isOpen":true,
             "isDirectory":false,
             "isAniNode":true,
             "hasChild":false,
@@ -32,7 +33,7 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,player",
-            "props":{"y":243,"x":831,"width":36,"runtime":"battle/player.js","name":"player","height":36},
+            "props":{"zOrder":5,"y":243,"x":831,"width":36,"runtime":"battle/player.js","name":"player","height":36},
             "nodeParent":2,
             "label":"player",
             "isOpen":false,
@@ -145,23 +146,35 @@
                     "compId":25,
                     "child":[
                         ]
+                },
+                {
+                    "type":"Animation",
+                    "searchKey":"Animation,attacked",
+                    "props":{"y":48,"x":41,"visible":false,"source":"attack.ani","name":"attacked"},
+                    "nodeParent":5,
+                    "label":"attacked",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":36,
+                    "child":[
+                        ]
                 }]
         },
         {
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,pers",
-            "props":{"y":264,"x":350,"width":83,"name":"pers","height":77},
+            "props":{"zOrder":5,"y":264,"x":350,"width":83,"name":"pers","height":77},
             "nodeParent":2,
             "label":"pers",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":14,
             "child":[
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,per1",
                     "props":{"texture":"zhandou/per1.png","runtime":"battle/per1.js","name":"per1"},
@@ -174,7 +187,6 @@
                     "compId":13,
                     "child":[
                         {
-                            "x":45,
                             "type":"Sprite",
                             "searchKey":"Sprite,is",
                             "props":{"y":-26,"x":17,"visible":false,"texture":"zhandou/choise.png","name":"is"},
@@ -188,7 +200,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
                             "searchKey":"Sprite,hp",
                             "props":{"y":216,"x":-292,"width":30,"texture":"zhandou/hp.png","name":"hp","height":30},
@@ -215,7 +226,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
                             "searchKey":"Sprite,mp",
                             "props":{"y":246,"x":-289,"width":38,"texture":"zhandou/mp.png","name":"mp","height":30},
@@ -242,7 +252,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
                             "searchKey":"Sprite,sp",
                             "props":{"y":276,"x":-290,"width":30,"texture":"zhandou/sp.png","name":"sp","height":30},
@@ -270,7 +279,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Label",
                             "searchKey":"Label,name",
                             "props":{"y":161,"x":-292,"width":196,"valign":"middle","text":"小商贩","styleSkin":"comp/label.png","name":"name","height":45,"fontSize":30,"color":"#d61241","bold":true,"align":"center"},
@@ -285,7 +293,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Animation",
                     "searchKey":"Animation,attacked",
                     "props":{"y":48,"x":41.5,"visible":false,"source":"attack.ani","name":"attacked"},
@@ -346,13 +353,14 @@
             "props":{"name":"Select"},
             "nodeParent":2,
             "label":"Select",
-            "isOpen":false,
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":33,
             "child":[
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,playAttack",
                     "props":{"y":86,"x":967,"runtime":"battle/playAttack.js","name":"playAttack"},
@@ -380,9 +388,10 @@
                     "$HIDDEN":false
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,playDefense",
-                    "props":{"y":86,"x":1103,"runtime":"battle/playDefense.js","name":"playDefense","height":30},
+                    "props":{"zOrder":6,"y":86,"x":1103,"runtime":"battle/playDefense.js","name":"playDefense","height":30},
                     "nodeParent":33,
                     "label":"playDefense",
                     "isOpen":false,
@@ -392,6 +401,7 @@
                     "compId":10,
                     "child":[
                         {
+                            "x":45,
                             "type":"Button",
                             "searchKey":"Button,fangyu",
                             "props":{"y":-10,"x":0,"width":125,"skin":"comp/button1.png","name":"fangyu","labelStrokeColor":"#140d31","labelStroke":1,"labelSize":22,"labelFont":"Helvetica","labelColors":"#33378e","labelBold":true,"label":"防 御","height":43},
@@ -405,9 +415,10 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Animation",
                             "searchKey":"Animation,ani",
-                            "props":{"zOrder":0,"y":217,"x":-242,"width":1,"visible":false,"source":"fangyu.ani","pivotY":12,"name":"ani","height":1},
+                            "props":{"zOrder":6,"y":217,"x":-242,"width":1,"visible":false,"source":"fangyu.ani","pivotY":12,"name":"ani","height":1},
                             "nodeParent":10,
                             "label":"ani",
                             "isOpen":false,
@@ -419,6 +430,33 @@
                                 ]
                         }],
                     "$HIDDEN":false
+                }]
+        },
+        {
+            "x":15,
+            "type":"Sprite",
+            "searchKey":"Sprite,globalSkill",
+            "props":{"y":61,"x":314,"visible":true,"name":"globalSkill"},
+            "nodeParent":2,
+            "label":"globalSkill",
+            "isOpen":false,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":40,
+            "child":[
+                {
+                    "type":"Animation",
+                    "searchKey":"Animation,skill1",
+                    "props":{"y":200,"x":300,"visible":false,"source":"skills.ani","name":"skill1"},
+                    "nodeParent":40,
+                    "label":"skill1",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":39,
+                    "child":[
+                        ]
                 }]
         }],
     "animations":[
