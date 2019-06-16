@@ -41,11 +41,11 @@ export default class npc2 extends Laya.Sprite{
     }
     sayChange(e){
         if(e==0){
-            Laya.Scene.open("Battle.scene");
-            //this.txt.text = '小商人:'+'小兄弟需要买东西吗？';
+            //Laya.Scene.open("Battle.scene");
+            this.txt.text = '小商人:'+'小兄弟需要买东西吗？';
         }
         else if(e==1){
-           /* this.txt.text = "1:我看看有什么  2:我再想想... (按下数值键选择)";
+            this.txt.text = "1:我看看有什么  2:我再想想... (按下数值键选择)";
             this.player.visible = true;
 
             Laya.stage.off(Laya.Event.KEY_DOWN);
@@ -57,9 +57,8 @@ export default class npc2 extends Laya.Sprite{
                 if(i==97||i==49){
                     this.parent.getChildByName('says').visible = false;
                     this.parent.getChildByName("body").onAwake();
-                    console.log("OK");
                     Laya.stage.on(Laya.Event.KEY_DOWN,this,infor);
-
+                    Laya.Scene.open("Battle.scene");
                     function infor(e){
                         var i =e["keyCode"];
                         if(i==1){
@@ -79,7 +78,8 @@ export default class npc2 extends Laya.Sprite{
                 else{
                     this.sayChange(1);
                 }
-            }*/
+                this.player.visible = false;
+            }
         }
         e++;
         Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.sayChange,[e]);

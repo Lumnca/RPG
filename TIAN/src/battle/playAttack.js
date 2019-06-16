@@ -39,15 +39,27 @@ export default class playAttack extends Laya.Sprite {
             this.attack1();
             hurt = Math.floor( (Math.random()*70 + window.player.gj ) * ( 1-window.emetys.fy/1000));
         }
+
         Laya.timer.frameOnce(100,this,stop,[hurt]);
 
         function stop(hurt){
+
             this.parent.parent.getChildByName('pers').getChildByName('attacked').gotoAndStop(5);
             this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = false;
+
             window.emetys.shp -= hurt;
+
             window.emetys.ssp += 8;
             this.txt.text = '你对'+window.emetys.name + '造成了' +hurt + '点伤害';
-            Laya.timer.frameOnce(100,this,this.end);
+            
+            if( window.emetys.shp<=0){
+                window.emetys.shp = 0;
+                Laya.timer.frameOnce(100,this,this.playerWiner);
+            }
+            else{
+                Laya.timer.frameOnce(100,this,this.end);
+            }
+           
            
         }
         
@@ -64,6 +76,9 @@ export default class playAttack extends Laya.Sprite {
     skillAttack1(){
         this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
         this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false);
+    }
+    playerWiner(){
+        Laya.Scene.close('Battle.scene');
     }
     onEnable() {
     }
