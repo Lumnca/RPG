@@ -1,3 +1,5 @@
+import player from "../battle/player";
+
 export default class playmoving extends Laya.Sprite{
      
     constructor() { 
@@ -24,6 +26,10 @@ export default class playmoving extends Laya.Sprite{
             this.x = 1055;
             this.y = 285;
             window.playerInfor = 0;
+        }
+        else if(window.playerInfor===2){
+            this.x = window.player.x;
+            this.y =window.player.y;
         }
     }
     sit(){

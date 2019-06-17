@@ -79,6 +79,9 @@ export default class playAttack extends Laya.Sprite {
     }
     playerWiner(){
         Laya.Scene.close('Battle.scene');
+        window.playerInfor = 2;
+        window.npcInfor = 1;
+        Laya.Scene.open('Sence1.scene');
     }
     onEnable() {
     }

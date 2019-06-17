@@ -92,6 +92,8 @@ export default class per1 extends Laya.Sprite {
     }
     perWiner(){
         Laya.Scene.close('Battle.scene');
+        window.playerInfor = 2;
+        Laya.Scene.open('Sence1.scene');
     }
     isAttacked(){
         if(window.player.start===true){

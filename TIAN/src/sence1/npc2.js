@@ -17,6 +17,15 @@ export default class npc2 extends Laya.Sprite{
         this.txt = this.parent.getChildByName('says').getChildByName('say').getChildAt(0).getChildAt(0);
         this.on(Laya.Event.MOUSE_DOWN, this, this.select);
         this.playbody = this.parent.getChildByName('body');
+        Laya.timer.frameLoop(1,this,this.fail);
+
+    }
+    fail(){
+        if(window.npcInfor===1){
+            this.txt.visible = true;
+            this.txt.text = '小商贩:可以，你打败了我，这是你的奖励';
+            Laya.timer.clear(this,this.fail);
+        }
     }
     select(){
         if((Math.abs(this.playbody.x-this.x)<100)&&(Math.abs(this.playbody.y-this.y)<100)){
@@ -51,13 +60,16 @@ export default class npc2 extends Laya.Sprite{
             Laya.stage.off(Laya.Event.KEY_DOWN);
             Laya.stage.once(Laya.Event.KEY_DOWN,this,npcSelect);
 
-            function npcSelect(event){
+            function npcSelect(event)
+            {
                 var i = event["keyCode"];
                 console.log(i);
                 if(i==97||i==49){
                     this.parent.getChildByName('says').visible = false;
                     this.parent.getChildByName("body").onAwake();
                     Laya.stage.on(Laya.Event.KEY_DOWN,this,infor);
+                    window.player.x = this.parent.getChildByName("body").x;
+                    window.player.y = this.parent.getChildByName("body").y;
                     Laya.Scene.open("Battle.scene");
                     function infor(e){
                         var i =e["keyCode"];
