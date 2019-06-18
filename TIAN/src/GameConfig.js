@@ -4,6 +4,7 @@ import playDefense from "./battle/playDefense"
 import player from "./battle/player"
 import per1 from "./battle/per1"
 import close from "./player/close"
+import playerInfor from "./start/playerInfor"
 import playmoving from "./start/playmoving"
 import npc1 from "./sence1/npc1"
 import doors from "./sence1/doors"
@@ -22,6 +23,7 @@ export default class GameConfig {
 		reg("battle/player.js",player);
 		reg("battle/per1.js",per1);
 		reg("player/close.js",close);
+		reg("start/playerInfor.js",playerInfor);
 		reg("start/playmoving.js",playmoving);
 		reg("sence1/npc1.js",npc1);
 		reg("sence1/doors.js",doors);

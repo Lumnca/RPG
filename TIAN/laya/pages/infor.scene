@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Dialog",
-    "selectedBox":17,
-    "selecteID":18,
+    "selectedBox":2,
+    "selecteID":16,
     "searchKey":"Dialog",
     "props":{"width":1200,"sceneColor":"#000000","height":960},
     "nodeParent":-1,
-    "maxID":19,
+    "maxID":25,
     "label":"Dialog",
     "isOpen":true,
     "isDirectory":true,
@@ -72,10 +72,10 @@
         {
             "x":15,
             "type":"Sprite",
-            "searchKey":"Sprite",
-            "props":{"y":387,"x":335},
+            "searchKey":"Sprite,infor",
+            "props":{"y":387,"x":335,"runtime":"start/playerInfor.js","name":"infor"},
             "nodeParent":2,
-            "label":"Sprite",
+            "label":"infor",
             "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
@@ -103,14 +103,13 @@
                     "props":{"y":77,"x":0,"texture":"playInfor/money.png","name":"money"},
                     "nodeParent":16,
                     "label":"money",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":17,
                     "child":[
                         {
-                            "x":45,
                             "type":"Label",
                             "searchKey":"Label",
                             "props":{"y":0,"x":34,"width":96,"valign":"middle","text":"金:200","styleSkin":"comp/label.png","height":26,"fontSize":26,"font":"Helvetica","color":"#6e7123","bold":true,"align":"left"},
@@ -120,6 +119,60 @@
                             "isAniNode":true,
                             "hasChild":false,
                             "compId":18,
+                            "child":[
+                                ]
+                        }]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,wgj",
+                    "props":{"y":119,"x":36,"name":"wgj"},
+                    "nodeParent":16,
+                    "label":"wgj",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":22,
+                    "child":[
+                        {
+                            "type":"Label",
+                            "searchKey":"Label",
+                            "props":{"width":94,"valign":"middle","text":"物攻:100","styleSkin":"comp/label.png","height":24,"fontSize":26,"color":"#be1d1a","bold":true},
+                            "nodeParent":22,
+                            "label":"Label",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":21,
+                            "child":[
+                                ]
+                        }]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,wfy",
+                    "props":{"y":163,"x":37,"name":"wfy"},
+                    "nodeParent":16,
+                    "label":"wfy",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":24,
+                    "child":[
+                        {
+                            "type":"Label",
+                            "searchKey":"Label",
+                            "props":{"x":-0.40625,"text":"物防:50","styleSkin":"comp/label.png","fontSize":26,"color":"#908f88","bold":true},
+                            "nodeParent":24,
+                            "label":"Label",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":23,
                             "child":[
                                 ]
                         }]
