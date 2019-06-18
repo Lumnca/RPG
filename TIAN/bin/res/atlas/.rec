@@ -154,6 +154,7 @@ R F3DD0DCE sence1bg.mp3
 R 25717414 startBg.mp3
 D music/playBattle
 R 2CA6618E attack.mp3
+R 5F123B0E skill1.mp3
 D npc/sence1
 D texiao/skill_1
 R 771704FD 21-1.jpg
@@ -209,6 +210,21 @@ R D362657E 21-6.jpg
 R 6DF68CAB 21-7.jpg
 R 45B02A49 21-8.jpg
 R CB6B63FF 21-9.jpg
+D texiao/skill_2
+R 9600B1D4 374-1.jpg
+R 2D0B7120 374-10.jpg
+R C470B147 374-11.jpg
+R D827A612 374-12.jpg
+R C97C4331 374-13.jpg
+R DFDB2275 374-14.jpg
+R 9B7089CB 374-2.jpg
+R CE67D353 374-3.jpg
+R B2BE2E4F 374-4.jpg
+R F64484B0 374-5.jpg
+R A62DDCEF 374-6.jpg
+R A08FEFE7 374-7.jpg
+R 75939CA4 374-8.jpg
+R 8477ADD3 374-9.jpg
 D npc/sence1/npc1
 P 55AB116C l1.png
 P F9BABB27 l2.png

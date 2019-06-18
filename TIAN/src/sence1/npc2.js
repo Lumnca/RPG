@@ -22,10 +22,17 @@ export default class npc2 extends Laya.Sprite{
     }
     fail(){
         if(window.npcInfor===1){
+            this.parent.getChildByName('says').visible = true;
             this.txt.visible = true;
             this.txt.text = '小商贩:可以，你打败了我，这是你的奖励';
+            this.parent.getChildByName('says').getChildByName('npc1').visible = false;
+            Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.getThing);
             Laya.timer.clear(this,this.fail);
         }
+    }
+    getThing(){
+        this.parent.getChildByName('says').visible = false;
+        window.npcInfor = 0;
     }
     select(){
         if((Math.abs(this.playbody.x-this.x)<100)&&(Math.abs(this.playbody.y-this.y)<100)){

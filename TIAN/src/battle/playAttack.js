@@ -74,12 +74,13 @@ export default class playAttack extends Laya.Sprite {
         this.parent.parent.getChildByName('pers').getChildByName('attacked').play(0,true,'attacked');
     }
     skillAttack1(){
+        Laya.SoundManager.playSound('../laya/assets/music/playBattle/skill1.mp3');
         this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
-        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false);
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false,'skill1');
     }
     playerWiner(){
         Laya.Scene.close('Battle.scene');
-        window.playerInfor = 2;
+        window.player.positionInfor = 1;
         window.npcInfor = 1;
         Laya.Scene.open('Sence1.scene');
     }

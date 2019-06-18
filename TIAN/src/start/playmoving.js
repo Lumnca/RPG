@@ -16,26 +16,17 @@ export default class playmoving extends Laya.Sprite{
     
     }
     onAwake(){
-        //this.getChildByName("player").play();
+
         this.getChildByName("player").gotoAndStop(3);
         Laya.stage.on(Laya.Event.RIGHT_MOUSE_DOWN,this,this.move,[this.getChildByName("player"),this]);
-        //Laya.timer.frameLoop(10,this,this.sit);
 
-
-        if(window.playerInfor===1){
-            this.x = 1055;
-            this.y = 285;
-            window.playerInfor = 0;
-        }
-        else if(window.playerInfor===2){
+        if(window.player.positionInfor!=0){
             this.x = window.player.x;
-            this.y =window.player.y;
+            this.y = window.player.y;
+            window.player.positionInfor = 0;
         }
     }
-    sit(){
-        //console.log("playAni:"+this.getChildByName('player').x+","+this.getChildByName('player').y);
-        //console.log("body:"+this.x+","+this.y)
-    }
+
     move(roleAni,body)
     {
         //获取点击坐标与图像位置

@@ -65,6 +65,8 @@ player1.y = 0;
 player1.gj = 300;
 player1.fy = 50;
 
+player1.positionInfor = 0;
+
 
 
 

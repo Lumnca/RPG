@@ -62,9 +62,17 @@ export default class per1 extends Laya.Sprite {
                 window.player.ssp+=12;
                 this.parent.parent.getChildByName('infors').getChildByName('txt').text = window.emetys.name+ '对你造成了' +hurt + '点伤害';
                 Laya.SoundManager.playSound('../laya/assets/music/playBattle/attack.mp3');
+
                 Laya.timer.frameOnce(100,this,this.stop);
-                this.parent.parent.getChildByName('player').getChildByName('attacked').visible = true;
-                this.parent.parent.getChildByName('player').getChildByName('attacked').play(0,true,'attacked');
+
+                if(window.emetys.shp<500){
+                    this.parent.parent.getChildByName('player').getChildByName('attacked').visible = true;
+                    this.parent.parent.getChildByName('player').getChildByName('attacked').play(0,true,'attacked');
+                }
+                else{
+                    this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+                    this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false,'skill2');
+                }
             }
         }
         else{
@@ -72,6 +80,7 @@ export default class per1 extends Laya.Sprite {
         }
     }
     stop(){
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = false;
         if(window.player.shp<=0){
             window.player.shp = 0;
             Laya.timer.frameOnce(100,this,this.perWiner);

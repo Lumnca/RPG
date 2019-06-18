@@ -1,4 +1,4 @@
-export default class doors extends Laya.Sprite {
+export default class inHouse2 extends Laya.Sprite {
 
     constructor() { 
         super(); 
@@ -14,16 +14,17 @@ export default class doors extends Laya.Sprite {
     }
     onAwake(){
         this.player = this.parent.getChildByName('body');
-        Laya.timer.frameLoop(1,this,this.doorMonitor);
+        Laya.timer.frameLoop(1,this,this.inHouse);
+       
     }
-    doorMonitor(){
+    inHouse(){
         var house1 = this;
-
+        console.log(Math.abs(house1.x-this.player.x)+","+Math.abs(house1.y-this.player.y));
         if(Math.abs(house1.x-this.player.x)<70&&Math.abs(house1.y-this.player.y)<20){
             
             window.player.x = house1.x+70;
             window.player.y = house1.y+20;
-            Laya.timer.clearAll(this);
+            Laya.timer.clear(this,this.inHouse);
             //Laya.Scene.closeAll();
             Laya.Scene.open('Sence1House1.scene');
 

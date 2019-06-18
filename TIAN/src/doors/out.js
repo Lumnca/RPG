@@ -18,12 +18,10 @@ export default class out extends Laya.Sprite {
     }
     outDoor(){
         if(Math.abs(this.x-this.player.x)<30&&Math.abs(this.y-this.player.y)<20){
-            //Laya.Scene.closeAll();
-            window.playerInfor = 1;
+            window.player.positionInfor = 1;
             Laya.Scene.close('Sence1House1.scene');
             Laya.timer.clearAll(this);
             Laya.Scene.open("Sence1.scene");
-            
         }
 
     }

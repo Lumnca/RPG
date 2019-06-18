@@ -8,6 +8,7 @@ import playmoving from "./start/playmoving"
 import npc1 from "./sence1/npc1"
 import doors from "./sence1/doors"
 import npc2 from "./sence1/npc2"
+import inHouse2 from "./doors/inHouse2"
 import out from "./doors/out"
 import bgMove from "./start/bgMove"
 import lognShow from "./start/lognShow"
@@ -25,6 +26,7 @@ export default class GameConfig {
 		reg("sence1/npc1.js",npc1);
 		reg("sence1/doors.js",doors);
 		reg("sence1/npc2.js",npc2);
+		reg("doors/inHouse2.js",inHouse2);
 		reg("doors/out.js",out);
 		reg("start/bgMove.js",bgMove);
 		reg("start/lognShow.js",lognShow);

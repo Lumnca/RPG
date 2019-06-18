@@ -25,6 +25,19 @@
             "compId":6,
             "child":[
                 ]
+        },
+        {
+            "type":"GraphicNode",
+            "searchKey":"GraphicNode",
+            "props":{},
+            "nodeParent":2,
+            "label":"GraphicNode",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":13,
+            "child":[
+                ]
         }],
     "animations":[
         {
@@ -534,9 +547,164 @@
                                 "index":52
                             }]
                     }
+                },
+                {
+                    "target":13,
+                    "keyframes":{
+
+                    }
                 }],
             "name":"skill1",
             "id":2,
+            "frameRate":24,
+            "action":0
+        },
+        {
+            "nodes":[
+                {
+                    "target":6,
+                    "keyframes":{
+
+                    }
+                },
+                {
+                    "target":13,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":-200,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":13,
+                                "key":"y",
+                                "index":0
+                            }],
+                        "x":[
+                            {
+                                "value":-302,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":13,
+                                "key":"x",
+                                "index":0
+                            }],
+                        "skin":[
+                            {
+                                "value":"texiao/skill_2/374-1.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":0
+                            },
+                            {
+                                "value":"texiao/skill_2/374-2.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":3
+                            },
+                            {
+                                "value":"texiao/skill_2/374-3.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":6
+                            },
+                            {
+                                "value":"texiao/skill_2/374-4.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":9
+                            },
+                            {
+                                "value":"texiao/skill_2/374-5.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":12
+                            },
+                            {
+                                "value":"texiao/skill_2/374-6.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":15
+                            },
+                            {
+                                "value":"texiao/skill_2/374-7.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":18
+                            },
+                            {
+                                "value":"texiao/skill_2/374-8.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":21
+                            },
+                            {
+                                "value":"texiao/skill_2/374-9.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":24
+                            },
+                            {
+                                "value":"texiao/skill_2/374-10.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":27
+                            },
+                            {
+                                "value":"texiao/skill_2/374-11.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":30
+                            },
+                            {
+                                "value":"texiao/skill_2/374-12.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":33
+                            },
+                            {
+                                "value":"texiao/skill_2/374-13.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":36
+                            },
+                            {
+                                "value":"texiao/skill_2/374-14.jpg",
+                                "tweenMethod":"linearNone",
+                                "tween":false,
+                                "target":13,
+                                "key":"skin",
+                                "index":39
+                            }]
+                    }
+                }],
+            "name":"skill2",
+            "id":3,
             "frameRate":24,
             "action":0
         }]
