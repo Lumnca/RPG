@@ -12,6 +12,8 @@ P D749C312 clip_tree_folder.png
 P 704C5D70 combobox.png
 P D566AE8B fontClip.png
 P 38AB8F3F fontClip_num.png
+P BFB19ECA hp$bar.png
+P 3DE567C9 hp.png
 P 6EF336AE hscroll$bar.png
 P 7FF47AC5 hscroll$down.png
 P 3D7B147A hscroll$up.png
@@ -27,6 +29,8 @@ P 5FD17798 img_bg4.png
 P 2BE22124 img_bg5.png
 P BA28BD65 img_blank.png
 P BA2A0579 label.png
+P 307EF903 mp$bar.png
+P 3DE567C9 mp.png
 P B017E53E progress$bar.png
 P C05839CD progress.png
 P 3C493DD4 radio.png
@@ -112,15 +116,23 @@ P D15054CF tr6.png
 P 1A4C4938 tr7.png
 P 9B4BD68B tr8.png
 D playInfor
+P 688F575E gj.png
+P 4A84A8BE hp.png
 R EBC91D7F infor1.png
+P F48C9DDA mf.png
 P D4EA9593 money.png
+P E3ED6584 sp.png
+P AA183CC4 wfu.png
 D say
 P D3EF1D5F npc1.png
 P 822B7F4B play1.png
 D sence
+R CC78F573 85-1.png
 R 943E02AC say.png
 R 4B053DA5 sence1.png
 R AB84037C senceHouse1.png
+R 01C80010 senceHouse2_1.png
+R 5AD620F7 senceHouse2_2.png
 D start
 P 79D91C73 chapter.png
 P 54E84470 logn.png

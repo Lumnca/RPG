@@ -67,8 +67,7 @@ player1.fy = 52;
 player1.money = 500;
 
 player1.positionInfor = 0;
-
-
+player1.battlefy = 0;
 
 
 

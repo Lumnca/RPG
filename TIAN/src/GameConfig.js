@@ -6,10 +6,14 @@ import per1 from "./battle/per1"
 import close from "./player/close"
 import playerInfor from "./start/playerInfor"
 import playmoving from "./start/playmoving"
+import outhouse2 from "./doors/sence1/outhouse2"
+import inhouse2 from "./doors/sence1/inhouse2"
+import outhouse_2 from "./doors/sence1/outhouse_2"
 import npc1 from "./sence1/npc1"
 import doors from "./sence1/doors"
 import npc2 from "./sence1/npc2"
 import inHouse2 from "./doors/inHouse2"
+import out3 from "./doors/out3"
 import out2 from "./doors/out2"
 import out from "./doors/out"
 import bgMove from "./start/bgMove"
@@ -26,10 +30,14 @@ export default class GameConfig {
 		reg("player/close.js",close);
 		reg("start/playerInfor.js",playerInfor);
 		reg("start/playmoving.js",playmoving);
+		reg("doors/sence1/outhouse2.js",outhouse2);
+		reg("doors/sence1/inhouse2.js",inhouse2);
+		reg("doors/sence1/outhouse_2.js",outhouse_2);
 		reg("sence1/npc1.js",npc1);
 		reg("sence1/doors.js",doors);
 		reg("sence1/npc2.js",npc2);
 		reg("doors/inHouse2.js",inHouse2);
+		reg("doors/out3.js",out3);
 		reg("doors/out2.js",out2);
 		reg("doors/out.js",out);
 		reg("start/bgMove.js",bgMove);

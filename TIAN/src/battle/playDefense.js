@@ -23,7 +23,7 @@ export default class playDefense extends Laya.Sprite {
         this.parent.parent.getChildByName('player').getChildByName('fangyu').play(0,true);
         
         this.parent.parent.getChildByName('infors').getChildByName('txt').text = '防御力上升';
-        window.player.fy += 30;
+        window.player.battlefy += 80;
         Laya.timer.frameOnce(110,this,this.stop);
     }
     stop(){

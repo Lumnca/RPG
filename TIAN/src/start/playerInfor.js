@@ -13,9 +13,22 @@ export default class playerInfor extends Laya.Sprite {
         // 更多参数说明请访问: https://ldc2.layabox.com/doc/?nav=zh-as-2-4-0
     }
     onAwake(){
+        this.getChildByName('money').getChildAt(0).text ='金:'+ window.player.money;
+        this.getChildByName('wgj').getChildAt(0).text = '物攻:'+window.player.gj;
+        this.getChildByName('wfy').getChildAt(0).text = '物防:'+window.player.fy;
+        this.getChildAt(4).getChildAt(0).value = (window.player.shp/window.player.hp);
+        this.getChildAt(5).getChildAt(0).value = (window.player.smp/window.player.mp);
+        Laya.timer.frameLoop(1,this,this.show);
+    }
+    show(){
         this.getChildByName('money').getChildAt(0).text = window.player.money;
         this.getChildByName('wgj').getChildAt(0).text = window.player.gj;
         this.getChildByName('wfy').getChildAt(0).text = window.player.fy;
+
+        this.getChildAt(4).getChildByName('hptxt').text = window.player.shp+'/'+window.player.hp;
+        this.getChildAt(4).getChildAt(0).value = (window.player.shp/window.player.hp);
+        this.getChildAt(5).getChildAt(0).value = (window.player.smp/window.player.mp);
+        this.getChildAt(5).getChildByName('mptxt').text = window.player.smp+'/'+window.player.mp;
     }
     onEnable() {
     }

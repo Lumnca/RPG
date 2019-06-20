@@ -18,14 +18,25 @@ export default class npc2 extends Laya.Sprite{
         this.on(Laya.Event.MOUSE_DOWN, this, this.select);
         this.playbody = this.parent.getChildByName('body');
         Laya.timer.frameLoop(1,this,this.fail);
-
     }
     fail(){
         if(window.npcInfor===1){
             this.parent.getChildByName('says').visible = true;
             this.txt.visible = true;
+            window.player.positionInfor = 1;
             this.txt.text = '小商贩:可以，你打败了我，这是你的奖励';
             this.parent.getChildByName('says').getChildByName('npc1').visible = false;
+            Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.getThing);
+            Laya.timer.clear(this,this.fail);
+        }
+        else if(window.npcInfor===2){
+            window.player.battlefy = 0;
+            window.player.positionInfor = 1;
+            this.parent.getChildByName('says').visible = true;
+            this.txt.visible = true;
+            this.txt.text = '小商贩:看来你还是不够强，再去练练吧';
+            this.parent.getChildByName('says').getChildByName('npc1').visible = false;
+            window.player.shp=500;
             Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.getThing);
             Laya.timer.clear(this,this.fail);
         }
@@ -56,6 +67,9 @@ export default class npc2 extends Laya.Sprite{
         }
     }
     sayChange(e){
+        window.player.x = this.parent.getChildByName("body").x;
+        window.player.y = this.parent.getChildByName("body").y;
+        window.player.positionInfor = 1;
         if(e==0){
             //Laya.Scene.open("Battle.scene");
             this.txt.text = '小商人:'+'小兄弟需要买东西吗？';
@@ -63,7 +77,6 @@ export default class npc2 extends Laya.Sprite{
         else if(e==1){
             this.txt.text = "1:我看看有什么  2:我再想想... (按下数值键选择)";
             this.player.visible = true;
-
             Laya.stage.off(Laya.Event.KEY_DOWN);
             Laya.stage.once(Laya.Event.KEY_DOWN,this,npcSelect);
 
@@ -75,8 +88,6 @@ export default class npc2 extends Laya.Sprite{
                     this.parent.getChildByName('says').visible = false;
                     this.parent.getChildByName("body").onAwake();
                     Laya.stage.on(Laya.Event.KEY_DOWN,this,infor);
-                    window.player.x = this.parent.getChildByName("body").x;
-                    window.player.y = this.parent.getChildByName("body").y;
                     Laya.Scene.open("Battle.scene");
                     function infor(e){
                         var i =e["keyCode"];

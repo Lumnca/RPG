@@ -8,4 +8,8 @@
    <item name="door/d6.png" type="Sprite" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
    <item name="door/d7.png" type="Sprite" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
    <item name="door/d8.png" type="Sprite" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="comp/progress - 副本.png" type="ProgressBar" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="comp/progress - 副本 - 副本.png" type="ProgressBar" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="comp/mp.png" type="ProgressBar" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="comp/hp.png" type="ProgressBar" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
 </res>

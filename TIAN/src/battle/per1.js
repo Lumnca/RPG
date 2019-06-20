@@ -51,7 +51,7 @@ export default class per1 extends Laya.Sprite {
 
                 this.parent.parent.getChildByName('infors').getChildByName('txt').text =window.emetys.name+  '使用了普通攻击';
 
-                var hurt = Math.floor((Math.random()*50+window.emetys.gj)*(1-window.player.fy/1000));
+                var hurt = Math.floor((Math.random()*50+window.emetys.gj)*(1-(window.player.fy+window.player.battlefy)/1000));
 
                 window.player.shp-=hurt;
 
@@ -65,7 +65,7 @@ export default class per1 extends Laya.Sprite {
 
                 Laya.timer.frameOnce(100,this,this.stop);
 
-                if(window.emetys.shp<500){
+                if(window.emetys.shp>600){
                     this.parent.parent.getChildByName('player').getChildByName('attacked').visible = true;
                     this.parent.parent.getChildByName('player').getChildByName('attacked').play(0,true,'attacked');
                 }
@@ -101,7 +101,7 @@ export default class per1 extends Laya.Sprite {
     }
     perWiner(){
         Laya.Scene.close('Battle.scene');
-        window.playerInfor = 2;
+        window.npcInfor = 2;
         Laya.Scene.open('Sence1.scene');
     }
     isAttacked(){

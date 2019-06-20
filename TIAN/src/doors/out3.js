@@ -1,4 +1,4 @@
-export default class playerInfor extends Laya.Sprite {
+export default class out3 extends Laya.Sprite {
 
     constructor() { 
         super(); 
@@ -13,6 +13,15 @@ export default class playerInfor extends Laya.Sprite {
         // 更多参数说明请访问: https://ldc2.layabox.com/doc/?nav=zh-as-2-4-0
     }
     onAwake(){
+        this.player = this.parent.getChildByName('body');
+        Laya.timer.frameLoop(1,this,this.out);
+    }
+    out(){
+        if(Math.abs(this.x-this.player.x)<30&&Math.abs(this.y-this.player.y)<20){
+            window.player.positionInfor = 0;
+            Laya.timer.clearAll(this);
+            Laya.Scene.open("sence/Sence2.scene");
+        }
 
     }
     onEnable() {

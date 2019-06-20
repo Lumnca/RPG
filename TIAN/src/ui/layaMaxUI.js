@@ -44,6 +44,45 @@ var sayUI=(function(_super){
 		}
 		return sayUI;
 	})(Dialog);
+var Sence1House2UI=(function(_super){
+		function Sence1House2UI(){
+			
+			Sence1House2UI.__super.call(this);
+		}
+		CLASS$(Sence1House2UI,'ui.sence.Sence1House2UI',_super);
+		var __proto__=Sence1House2UI.prototype;
+		__proto__.createChildren=function(){
+			_super.prototype.createChildren.call(this);
+			this.loadScene("sence/Sence1House2");
+		}
+		return Sence1House2UI;
+	})(Scene);
+var Sence1House2_2UI=(function(_super){
+		function Sence1House2_2UI(){
+			
+			Sence1House2_2UI.__super.call(this);
+		}
+		CLASS$(Sence1House2_2UI,'ui.sence.Sence1House2_2UI',_super);
+		var __proto__=Sence1House2_2UI.prototype;
+		__proto__.createChildren=function(){
+			_super.prototype.createChildren.call(this);
+			this.loadScene("sence/Sence1House2_2");
+		}
+		return Sence1House2_2UI;
+	})(Scene);
+var Sence2UI=(function(_super){
+		function Sence2UI(){
+			
+			Sence2UI.__super.call(this);
+		}
+		CLASS$(Sence2UI,'ui.sence.Sence2UI',_super);
+		var __proto__=Sence2UI.prototype;
+		__proto__.createChildren=function(){
+			_super.prototype.createChildren.call(this);
+			this.loadScene("sence/Sence2");
+		}
+		return Sence2UI;
+	})(Scene);
 var Sence1UI=(function(_super){
 		function Sence1UI(){
 			

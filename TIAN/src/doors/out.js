@@ -23,7 +23,6 @@ export default class out extends Laya.Sprite {
             Laya.timer.clearAll(this);
             Laya.Scene.open("Sence1.scene");
         }
-
     }
     onEnable() {
     }
