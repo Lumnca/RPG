@@ -11,9 +11,17 @@ export default class lognShow extends Laya.Image{
         /** @prop {name:boolType, tips:"布尔类型示例", type:Bool, default:true}*/
         let boolType = true;
         // 更多参数说明请访问: https://ldc2.layabox.com/doc/?nav=zh-as-2-4-0
-        Laya.timer.frameLoop(40,this,this.chageDisplay);
+        
     }   
     onAwake(){
+        Laya.timer.frameLoop(40,this,this.chageDisplay);
+        Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.gameStart);
+    }
+    gameStart(){
+        Laya.SoundManager.playMusic("music/bg/startBg.mp3");
+        this.parent.parent.getChildByName('gk').visible = true;
+        this.visible = false;
+        Laya.timer.clear(this,this.chageDisplay);
     }
     chageDisplay(){
         

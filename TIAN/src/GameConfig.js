@@ -18,6 +18,8 @@ import out2 from "./doors/out2"
 import out from "./doors/out"
 import bgMove from "./start/bgMove"
 import lognShow from "./start/lognShow"
+import loadAssets from "./start/loadAssets"
+import gkClick from "./start/gkClick"
 
 export default class GameConfig {
     static init() {
@@ -42,6 +44,8 @@ export default class GameConfig {
 		reg("doors/out.js",out);
 		reg("start/bgMove.js",bgMove);
 		reg("start/lognShow.js",lognShow);
+		reg("start/loadAssets.js",loadAssets);
+		reg("start/gkClick.js",gkClick);
     }
 }
 GameConfig.width = 640;

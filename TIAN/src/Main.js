@@ -43,9 +43,6 @@ Laya.stage.width = 1278;
 Laya.stage.height = 480;
 Laya.Scene.open("start.scene");
 
-Laya.stage.once(Laya.Event.MOUSE_DOWN,this,gameStart);
-
-
 var player1 = new Object();
 
 //基础信息
@@ -55,7 +52,7 @@ player1.mp = 100;
 player1.smp = 100;
 player1.ssp = 0;
 player1.sp = 100;
-player1.name = '云傲天';
+player1.name = '陈靖仇';
 player1.start  = false;
 window.player = player1;
 
@@ -69,16 +66,6 @@ player1.money = 500;
 player1.positionInfor = 0;
 player1.battlefy = 0;
 
-
-
-
-
-
-
-function gameStart(){
-	Laya.Scene.open("Sence1.scene");
-	Laya.SoundManager.playMusic("../laya/assets/music/bg/sence1bg.mp3");
-}
 
 Laya.stage.on(Laya.Event.KEY_DOWN,this,infor);
 

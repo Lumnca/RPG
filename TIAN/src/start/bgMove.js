@@ -15,11 +15,9 @@ export default class bgMove extends Laya.Image {
     }
     onAwake(){
         Laya.timer.frameLoop(1,this,this.move);
-        Laya.SoundManager.playMusic("../laya/assets/music/bg/startBg.mp3"); 
+     
     }
-    gameStart(){
-       
-    }
+
     move(){
         this.x-=3;
         if(this.x<=-1278){

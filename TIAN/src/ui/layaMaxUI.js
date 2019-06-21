@@ -112,8 +112,8 @@ var Sence1House1UI=(function(_super){
 var startUI=(function(_super){
 		function startUI(){
 			
-		    this.bg1=null;
 		    this.bg2=null;
+		    this.bg1=null;
 		    this.logn=null;
 		    this.infor=null;
 			startUI.__super.call(this);

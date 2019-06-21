@@ -3,28 +3,30 @@
         "../bin/**/*.*"
     ],
     "openDataZone": false,
-    "compressJson": true,
+    "compressJson": false,
     "compressJsonFilter": [
-        "$basePath/**/*.{json,atlas}"
+        "$basePath/**/*.{json,atlas}",
+        "$basePath/**/*.*"
     ],
     "compressJsonNoteList": [
+        "",
         ""
     ],
-    "compressImage": true,
+    "compressImage": false,
     "compressImageFilter": [
         "$basePath/**/*.{png,jpg}"
     ],
     "compressImageNoteList": [
         ""
     ],
-    "compressJs": true,
+    "compressJs": false,
     "compressJsFilter": [
         "$basePath/**/*.js"
     ],
     "compressJsNoteList": [
         ""
     ],
-    "version": true,
+    "version": false,
     "versionFilter": [
         "$basePath/**/*.*",
         "!$basePath/*.html",
@@ -52,5 +54,5 @@
     "compile": true,
     "onlyIndexJS": true,
     "projectType": "js",
-    "pubTime": 1561016529945
+    "pubTime": 1561020861010
 }
