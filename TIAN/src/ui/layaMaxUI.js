@@ -57,19 +57,19 @@ var gift1UI=(function(_super){
 		}
 		return gift1UI;
 	})(Dialog);
-var gift2UI=(function(_super){
-		function gift2UI(){
+var gift3UI=(function(_super){
+		function gift3UI(){
 			
-			gift2UI.__super.call(this);
+			gift3UI.__super.call(this);
 		}
-		CLASS$(gift2UI,'ui.sence.gift2UI',_super);
-		var __proto__=gift2UI.prototype;
+		CLASS$(gift3UI,'ui.sence.gift3UI',_super);
+		var __proto__=gift3UI.prototype;
 		__proto__.createChildren=function(){
 			_super.prototype.createChildren.call(this);
-			this.loadScene("sence/gift2");
+			this.loadScene("sence/gift3");
 		}
-		return gift2UI;
-	})(Scene);
+		return gift3UI;
+	})(Dialog);
 var Sence1House2UI=(function(_super){
 		function Sence1House2UI(){
 			

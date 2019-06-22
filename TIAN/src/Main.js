@@ -75,8 +75,8 @@ function infor(e){
 		
 	}
 	else if(i==32){
-		//Laya.Scene.open("infor.scene");
-		Laya.Scene.open("sence/gift2.scene");
+		Laya.Scene.open("infor.scene");
+		//Laya.Scene.open("sence/gift2.scene");
 	}
 }
 
