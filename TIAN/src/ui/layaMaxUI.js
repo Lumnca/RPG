@@ -44,6 +44,32 @@ var sayUI=(function(_super){
 		}
 		return sayUI;
 	})(Dialog);
+var gift1UI=(function(_super){
+		function gift1UI(){
+			
+			gift1UI.__super.call(this);
+		}
+		CLASS$(gift1UI,'ui.sence.gift1UI',_super);
+		var __proto__=gift1UI.prototype;
+		__proto__.createChildren=function(){
+			_super.prototype.createChildren.call(this);
+			this.loadScene("sence/gift1");
+		}
+		return gift1UI;
+	})(Dialog);
+var gift2UI=(function(_super){
+		function gift2UI(){
+			
+			gift2UI.__super.call(this);
+		}
+		CLASS$(gift2UI,'ui.sence.gift2UI',_super);
+		var __proto__=gift2UI.prototype;
+		__proto__.createChildren=function(){
+			_super.prototype.createChildren.call(this);
+			this.loadScene("sence/gift2");
+		}
+		return gift2UI;
+	})(Scene);
 var Sence1House2UI=(function(_super){
 		function Sence1House2UI(){
 			

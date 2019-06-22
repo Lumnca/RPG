@@ -12,4 +12,5 @@
    <item name="comp/progress - 副本 - 副本.png" type="ProgressBar" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
    <item name="comp/mp.png" type="ProgressBar" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
    <item name="comp/hp.png" type="ProgressBar" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="comp/button1.png" type="Button" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
 </res>

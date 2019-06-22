@@ -5,6 +5,8 @@ import player from "./battle/player"
 import per1 from "./battle/per1"
 import close from "./player/close"
 import playerInfor from "./start/playerInfor"
+import closeGift1 from "./gift/closeGift1"
+import dataGame from "./gift/dataGame"
 import playmoving from "./start/playmoving"
 import outhouse2 from "./doors/sence1/outhouse2"
 import inhouse2 from "./doors/sence1/inhouse2"
@@ -16,6 +18,8 @@ import inHouse2 from "./doors/inHouse2"
 import out3 from "./doors/out3"
 import out2 from "./doors/out2"
 import out from "./doors/out"
+import house2 from "./sence1/house2"
+import gift1 from "./gift/gift1"
 import bgMove from "./start/bgMove"
 import lognShow from "./start/lognShow"
 import loadAssets from "./start/loadAssets"
@@ -31,6 +35,8 @@ export default class GameConfig {
 		reg("battle/per1.js",per1);
 		reg("player/close.js",close);
 		reg("start/playerInfor.js",playerInfor);
+		reg("gift/closeGift1.js",closeGift1);
+		reg("gift/dataGame.js",dataGame);
 		reg("start/playmoving.js",playmoving);
 		reg("doors/sence1/outhouse2.js",outhouse2);
 		reg("doors/sence1/inhouse2.js",inhouse2);
@@ -42,6 +48,8 @@ export default class GameConfig {
 		reg("doors/out3.js",out3);
 		reg("doors/out2.js",out2);
 		reg("doors/out.js",out);
+		reg("sence1/house2.js",house2);
+		reg("gift/gift1.js",gift1);
 		reg("start/bgMove.js",bgMove);
 		reg("start/lognShow.js",lognShow);
 		reg("start/loadAssets.js",loadAssets);

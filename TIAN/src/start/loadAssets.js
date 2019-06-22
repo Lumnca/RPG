@@ -30,7 +30,13 @@ export default class loadAssets extends Laya.Sprite {
             this.parent.getChildByName('show').visible = true;
             this.visible = false;
             Laya.timer.clear(this,this.loading);
+            Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.gameStart);
         }
+    }
+    gameStart(){
+        Laya.SoundManager.playMusic("music/bg/startBg.mp3");
+        this.parent.getChildByName('gk').visible = true;
+        this.parent.getChildByName('show').getChildByName('lognImage').stop();
     }
     onEnable() {
     }

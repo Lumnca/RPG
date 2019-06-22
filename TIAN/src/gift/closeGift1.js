@@ -1,4 +1,4 @@
-export default class lognShow extends Laya.Image{
+export default class closeGift1 extends Laya.Sprite {
 
     constructor() { 
         super(); 
@@ -11,23 +11,13 @@ export default class lognShow extends Laya.Image{
         /** @prop {name:boolType, tips:"布尔类型示例", type:Bool, default:true}*/
         let boolType = true;
         // 更多参数说明请访问: https://ldc2.layabox.com/doc/?nav=zh-as-2-4-0
-        
-    }   
+    }
     onAwake(){
-        Laya.timer.frameLoop(40,this,this.chageDisplay);
+        this.on(Laya.Event.MOUSE_DOWN,this,this.close);
     }
-    chageDisplay(){
-    if(this.visible){
-            this.visible = false;
-        }
-        else{
-            this.visible = true;
-        }
-       
-    }
-    stop(){
-        this.visible = false;
-        Laya.timer.clear(this,this.chageDisplay);
+    close(){
+        Laya.Scene.close("sence/gift1.scene");
+        window.giftFlag=true;
     }
     onEnable() {
     }

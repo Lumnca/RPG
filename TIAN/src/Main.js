@@ -75,8 +75,16 @@ function infor(e){
 		
 	}
 	else if(i==32){
-		Laya.Scene.open("infor.scene");
+		//Laya.Scene.open("infor.scene");
+		Laya.Scene.open("sence/gift2.scene");
 	}
 }
 
 
+window.giftFlag = false;
+window.giftSeekNum = 0;
+window.GettingGifts = function(name){
+	if(name==='24352337782914'){
+
+	}
+}

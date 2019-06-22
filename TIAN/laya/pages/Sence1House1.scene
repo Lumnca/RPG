@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":5,
-    "selecteID":10,
+    "selectedBox":2,
+    "selecteID":21,
     "searchKey":"Scene",
     "props":{"width":1200,"sceneColor":"#000000","height":960},
     "nodeParent":-1,
-    "maxID":12,
+    "maxID":22,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -21,42 +21,13 @@
             "props":{"y":230,"x":297,"texture":"sence/senceHouse1.png"},
             "nodeParent":2,
             "label":"Sprite",
-            "isOpen":false,
-            "isDirectory":true,
+            "isOpen":true,
+            "isDirectory":false,
             "isAniNode":true,
-            "hasChild":true,
+            "hasChild":false,
             "compId":3,
             "child":[
-                {
-                    "type":"PolygonCollider",
-                    "switchAble":true,
-                    "searchKey":"PolygonCollider",
-                    "removeAble":true,
-                    "props":{"y":451,"x":320,"points":"45,3,-15,-47,-22,-99,-128,-113,-175,-90"},
-                    "nodeParent":3,
-                    "label":"PolygonCollider",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":8,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"RigidBody",
-                    "switchAble":true,
-                    "searchKey":"RigidBody",
-                    "removeAble":true,
-                    "props":{"type":"static","group":1},
-                    "nodeParent":3,
-                    "label":"RigidBody",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":9,
-                    "child":[
-                        ]
-                }]
+                ]
         },
         {
             "x":15,
@@ -65,14 +36,13 @@
             "props":{"y":552,"x":716,"width":60,"runtime":"start/playmoving.js","pivotY":43,"pivotX":30,"name":"body","height":86},
             "nodeParent":2,
             "label":"body",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":5,
             "child":[
                 {
-                    "x":30,
                     "type":"Animation",
                     "searchKey":"Animation,player",
                     "props":{"y":43,"x":30,"source":"playMoving.ani","name":"player"},
@@ -86,12 +56,11 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"BoxCollider",
                     "switchAble":true,
                     "searchKey":"BoxCollider",
                     "removeAble":true,
-                    "props":{"y":24.5,"x":13.5,"width":33,"height":47},
+                    "props":{"y":35.5,"x":19,"width":22,"height":27},
                     "nodeParent":5,
                     "label":"BoxCollider",
                     "isOpen":true,
@@ -103,7 +72,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"RigidBody",
                     "switchAble":true,
                     "searchKey":"RigidBody",
@@ -145,6 +113,122 @@
                     "child":[
                         ]
                 }]
+        },
+        {
+            "x":15,
+            "type":"Sprite",
+            "searchKey":"Sprite,says",
+            "props":{"y":574,"x":21,"width":1280,"visible":true,"runtime":"sence1/house2.js","name":"says","height":250},
+            "nodeParent":2,
+            "label":"says",
+            "isOpen":false,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":12,
+            "child":[
+                {
+                    "type":"Sprite",
+                    "searchKey":"Sprite,player",
+                    "props":{"y":31,"x":65,"visible":true,"texture":"say/play1.png","name":"player"},
+                    "nodeParent":12,
+                    "label":"player",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":14,
+                    "child":[
+                        ]
+                },
+                {
+                    "type":"Sprite",
+                    "searchKey":"Sprite,say",
+                    "props":{"y":141,"x":240,"texture":"sence/say.png","name":"say"},
+                    "nodeParent":12,
+                    "label":"say",
+                    "isOpen":true,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":15,
+                    "child":[
+                        {
+                            "type":"Label",
+                            "searchKey":"Label,txt",
+                            "props":{"y":11,"x":24,"width":747,"text":"应该在米格低杆","styleSkin":"comp/label.png","name":"txt","height":78,"fontSize":26,"color":"#f6ecec"},
+                            "nodeParent":15,
+                            "label":"txt",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":17,
+                            "child":[
+                                ]
+                        }]
+                }],
+            "$HIDDEN":false
+        },
+        {
+            "x":15,
+            "type":"PolygonCollider",
+            "switchAble":true,
+            "searchKey":"PolygonCollider",
+            "removeAble":true,
+            "props":{"y":454,"x":390,"points":"77,-91,103,26,100,100,-98,242,-86,-69"},
+            "nodeParent":2,
+            "label":"PolygonCollider",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":18,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"RigidBody",
+            "switchAble":true,
+            "searchKey":"RigidBody",
+            "removeAble":true,
+            "props":{"type":"static","group":1},
+            "nodeParent":2,
+            "label":"RigidBody",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":19,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"PolygonCollider",
+            "switchAble":true,
+            "searchKey":"PolygonCollider",
+            "removeAble":true,
+            "props":{"y":552,"x":448.25,"points":"19,-6,166,67,236,150,-132,150"},
+            "nodeParent":2,
+            "label":"PolygonCollider",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":20,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Sprite",
+            "searchKey":"Sprite,gift1",
+            "props":{"y":403,"x":776,"width":77,"runtime":"gift/gift1.js","rotation":55,"name":"gift1","height":28},
+            "nodeParent":2,
+            "label":"gift1",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":21,
+            "child":[
+                ]
         }],
     "animations":[
         {

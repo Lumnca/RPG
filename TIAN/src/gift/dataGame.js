@@ -1,4 +1,4 @@
-export default class lognShow extends Laya.Image{
+export default class dataGame extends Laya.Sprite {
 
     constructor() { 
         super(); 
@@ -11,23 +11,15 @@ export default class lognShow extends Laya.Image{
         /** @prop {name:boolType, tips:"布尔类型示例", type:Bool, default:true}*/
         let boolType = true;
         // 更多参数说明请访问: https://ldc2.layabox.com/doc/?nav=zh-as-2-4-0
-        
-    }   
+    }
     onAwake(){
-        Laya.timer.frameLoop(40,this,this.chageDisplay);
-    }
-    chageDisplay(){
-    if(this.visible){
-            this.visible = false;
-        }
-        else{
-            this.visible = true;
-        }
-       
-    }
-    stop(){
-        this.visible = false;
-        Laya.timer.clear(this,this.chageDisplay);
+        this.show = this.getChildAt(0);
+        this.input = this.getChildAt(2).getChildAt(0);
+        this.sumbit = this.getChildAt(1);
+
+
+        this.show.text = 'sssss';
+        this.input.text = 'xxxxx';
     }
     onEnable() {
     }
