@@ -57,6 +57,19 @@ var gift1UI=(function(_super){
 		}
 		return gift1UI;
 	})(Dialog);
+var gift2UI=(function(_super){
+		function gift2UI(){
+			
+			gift2UI.__super.call(this);
+		}
+		CLASS$(gift2UI,'ui.sence.gift2UI',_super);
+		var __proto__=gift2UI.prototype;
+		__proto__.createChildren=function(){
+			_super.prototype.createChildren.call(this);
+			this.loadScene("sence/gift2");
+		}
+		return gift2UI;
+	})(Dialog);
 var gift3UI=(function(_super){
 		function gift3UI(){
 			

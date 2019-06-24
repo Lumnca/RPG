@@ -15,6 +15,8 @@ export default class house2 extends Laya.Sprite {
     onAwake(){
         window.giftSeekNum = 0;
         Laya.timer.once(100,this,this.start);
+       
+        //-------------
     }
     start(){
         this.getChildByName('say').getChildAt(0).text = window.player.name+':按照村长所说，应该是在这个屋子的某个地方';

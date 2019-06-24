@@ -6,6 +6,8 @@ import per1 from "./battle/per1"
 import close from "./player/close"
 import playerInfor from "./start/playerInfor"
 import closeGift1 from "./gift/closeGift1"
+import viedoShow from "./gift/viedoShow"
+import closeViedo from "./gift/closeViedo"
 import dataGame from "./gift/dataGame"
 import closeGift2 from "./gift/closeGift2"
 import playmoving from "./start/playmoving"
@@ -22,6 +24,7 @@ import out from "./doors/out"
 import house2 from "./sence1/house2"
 import gift1 from "./gift/gift1"
 import gift2 from "./gift/gift2"
+import viedo from "./gift/viedo"
 import bgMove from "./start/bgMove"
 import lognShow from "./start/lognShow"
 import loadAssets from "./start/loadAssets"
@@ -38,6 +41,8 @@ export default class GameConfig {
 		reg("player/close.js",close);
 		reg("start/playerInfor.js",playerInfor);
 		reg("gift/closeGift1.js",closeGift1);
+		reg("gift/viedoShow.js",viedoShow);
+		reg("gift/closeViedo.js",closeViedo);
 		reg("gift/dataGame.js",dataGame);
 		reg("gift/closeGift2.js",closeGift2);
 		reg("start/playmoving.js",playmoving);
@@ -54,6 +59,7 @@ export default class GameConfig {
 		reg("sence1/house2.js",house2);
 		reg("gift/gift1.js",gift1);
 		reg("gift/gift2.js",gift2);
+		reg("gift/viedo.js",viedo);
 		reg("start/bgMove.js",bgMove);
 		reg("start/lognShow.js",lognShow);
 		reg("start/loadAssets.js",loadAssets);

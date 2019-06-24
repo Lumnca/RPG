@@ -20,6 +20,7 @@ export default class closeGift2 extends Laya.Sprite {
         window.giftFlag=true;
     }
     onEnable() {
+        
     }
 
     onDisable() {
