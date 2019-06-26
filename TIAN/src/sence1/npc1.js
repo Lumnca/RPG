@@ -55,10 +55,10 @@ export default class npc1 extends Laya.Sprite {
             txt.text='村长：这个游戏没有剧情，也没有目标';
         }
         else if(x==3){
-            txt.text='村长：你可以做你自己想做的事情';
+            txt.text='村长：不过你先帮我送给张菲燕一份生日礼物';
         }
         else if(x==4){
-            txt.text='村长：所以，去玩吧，小伙子。未来由你去发现。';
+            txt.text='村长：就在旁边的屋子里面。';
         }
         else if(x==5){
             this.parent.getChildByName('says').visible = false;

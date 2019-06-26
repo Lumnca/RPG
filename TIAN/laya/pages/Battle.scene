@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":2,
-    "selecteID":40,
+    "selectedBox":33,
+    "selecteID":57,
     "searchKey":"Scene",
     "props":{"width":1280,"sceneColor":"#000000","height":600},
     "nodeParent":-1,
-    "maxID":43,
+    "maxID":59,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -36,16 +36,17 @@
             "props":{"zOrder":6,"y":0,"x":0,"name":"Select"},
             "nodeParent":2,
             "label":"Select",
-            "isOpen":false,
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":33,
             "child":[
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,playAttack",
-                    "props":{"y":103.5,"x":968,"runtime":"battle/playAttack.js","name":"playAttack"},
+                    "props":{"y":100.5,"x":968,"runtime":"battle/playAttack.js","name":"playAttack"},
                     "nodeParent":33,
                     "label":"playAttack",
                     "isOpen":false,
@@ -70,9 +71,10 @@
                     "$HIDDEN":false
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,playDefense",
-                    "props":{"zOrder":9,"y":103.5,"x":1101.5,"runtime":"battle/playDefense.js","name":"playDefense","height":30},
+                    "props":{"zOrder":9,"y":100.5,"x":1101.5,"runtime":"battle/playDefense.js","name":"playDefense","height":30},
                     "nodeParent":33,
                     "label":"playDefense",
                     "isOpen":false,
@@ -91,6 +93,174 @@
                             "isAniNode":true,
                             "hasChild":false,
                             "compId":11,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":false
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,skill1",
+                    "props":{"y":158,"x":968,"runtime":"battle/skill1.js","name":"skill1"},
+                    "nodeParent":33,
+                    "label":"skill1",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":43,
+                    "child":[
+                        {
+                            "type":"Button",
+                            "searchKey":"Button,attack",
+                            "props":{"y":-10,"x":0,"width":125,"skin":"comp/button1.png","name":"attack","labelStrokeColor":"#140d31","labelStroke":1,"labelSize":22,"labelFont":"Helvetica","labelColors":"#33378e","labelBold":true,"label":"雷雨风暴","height":43},
+                            "nodeParent":43,
+                            "label":"attack",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":44,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":false
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,skill2",
+                    "props":{"y":158,"x":1101.5,"runtime":"battle/skill2.js","name":"skill2"},
+                    "nodeParent":33,
+                    "label":"skill2",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":45,
+                    "child":[
+                        {
+                            "type":"Button",
+                            "searchKey":"Button,attack",
+                            "props":{"y":-10,"x":0,"width":125,"skin":"comp/button1.png","name":"attack","labelStrokeColor":"#140d31","labelStroke":1,"labelSize":22,"labelFont":"Helvetica","labelColors":"#33378e","labelBold":true,"label":"流星零落","height":43},
+                            "nodeParent":45,
+                            "label":"attack",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":46,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":false
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,skill4",
+                    "props":{"y":219,"x":1101.5,"runtime":"battle/skill4.js","name":"skill4"},
+                    "nodeParent":33,
+                    "label":"skill4",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":51,
+                    "child":[
+                        {
+                            "type":"Button",
+                            "searchKey":"Button,attack",
+                            "props":{"y":-10,"x":0,"width":125,"skin":"comp/button1.png","name":"attack","labelStrokeColor":"#140d31","labelStroke":1,"labelSize":22,"labelFont":"Helvetica","labelColors":"#33378e","labelBold":true,"label":"远古石剑","height":43},
+                            "nodeParent":51,
+                            "label":"attack",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":52,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":false
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,skill5",
+                    "props":{"y":281.5,"x":968,"runtime":"battle/skill5.js","name":"skill5"},
+                    "nodeParent":33,
+                    "label":"skill5",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":53,
+                    "child":[
+                        {
+                            "type":"Button",
+                            "searchKey":"Button,attack",
+                            "props":{"y":-10,"x":0,"width":125,"skin":"comp/button1.png","name":"attack","labelStrokeColor":"#140d31","labelStroke":1,"labelSize":22,"labelFont":"Helvetica","labelColors":"#33378e","labelBold":true,"label":"虹光旋风","height":43},
+                            "nodeParent":53,
+                            "label":"attack",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":54,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":false
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,skill3",
+                    "props":{"y":219,"x":968,"runtime":"battle/skill3.js","name":"skill3"},
+                    "nodeParent":33,
+                    "label":"skill3",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":55,
+                    "child":[
+                        {
+                            "type":"Button",
+                            "searchKey":"Button,attack",
+                            "props":{"y":-10,"x":0,"width":125,"skin":"comp/button1.png","name":"attack","labelStrokeColor":"#140d31","labelStroke":1,"labelSize":22,"labelFont":"Helvetica","labelColors":"#33378e","labelBold":true,"label":"绝对石封","height":43},
+                            "nodeParent":55,
+                            "label":"attack",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":56,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":false
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,skill6",
+                    "props":{"y":281.5,"x":1101.5,"runtime":"battle/skill6.js","name":"skill6"},
+                    "nodeParent":33,
+                    "label":"skill6",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":57,
+                    "child":[
+                        {
+                            "type":"Button",
+                            "searchKey":"Button,attack",
+                            "props":{"y":-10,"x":0,"width":125,"skin":"comp/button1.png","name":"attack","labelStrokeColor":"#140d31","labelStroke":1,"labelSize":22,"labelFont":"Helvetica","labelColors":"#33378e","labelBold":true,"label":"流光电闪","height":43},
+                            "nodeParent":57,
+                            "label":"attack",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":58,
                             "child":[
                                 ]
                         }],

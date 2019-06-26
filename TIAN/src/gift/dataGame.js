@@ -49,7 +49,7 @@ export default class dataGame extends Laya.Sprite {
             this.show.text = '9个锥子，输入日期';
         }
         else if(this.input.text=='0318'){
-            this.show.text = '2510521916274262032021568';
+            this.show.text = '--------GettingGifts---------';
         }
         else{
             this.show.text = '没有特别的信息，换一个试试吧';

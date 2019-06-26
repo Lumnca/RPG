@@ -2,11 +2,11 @@
     "x":0,
     "type":"Scene",
     "selectedBox":2,
-    "selecteID":23,
+    "selecteID":24,
     "searchKey":"Scene",
     "props":{"width":1200,"sceneColor":"#000000","height":960},
     "nodeParent":-1,
-    "maxID":24,
+    "maxID":27,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -206,7 +206,7 @@
             "switchAble":true,
             "searchKey":"PolygonCollider",
             "removeAble":true,
-            "props":{"y":552,"x":448.25,"points":"19,-6,166,67,236,150,-132,150"},
+            "props":{"y":552,"x":448.25,"points":"20,11,166,67,236,150,-132,150"},
             "nodeParent":2,
             "label":"PolygonCollider",
             "isDirectory":false,
@@ -257,6 +257,52 @@
             "compId":23,
             "child":[
                 ]
+        },
+        {
+            "x":15,
+            "type":"Sprite",
+            "searchKey":"Sprite",
+            "props":{"y":542,"x":501,"width":141,"runtime":"gift/gift3.js","rotation":29,"height":53},
+            "nodeParent":2,
+            "label":"Sprite",
+            "isOpen":false,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":24,
+            "child":[
+                {
+                    "x":30,
+                    "type":"BoxCollider",
+                    "switchAble":true,
+                    "searchKey":"BoxCollider",
+                    "removeAble":true,
+                    "props":{"width":141,"height":53},
+                    "nodeParent":24,
+                    "label":"BoxCollider",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":25,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"RigidBody",
+                    "switchAble":true,
+                    "searchKey":"RigidBody",
+                    "removeAble":true,
+                    "props":{"type":"static","group":1},
+                    "nodeParent":24,
+                    "label":"RigidBody",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":26,
+                    "child":[
+                        ]
+                }]
         }],
     "animations":[
         {

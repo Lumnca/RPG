@@ -18,6 +18,12 @@ export default class playDefense extends Laya.Sprite {
     }
     defense(){
         this.visible = false;
+        this.parent.getChildByName('skill1').visible = false;
+        this.parent.getChildByName('skill2').visible = false;
+        this.parent.getChildByName('skill3').visible = false;
+        this.parent.getChildByName('skill4').visible = false;
+        this.parent.getChildByName('skill5').visible = false;
+        //this.parent.getChildByName('skill6').visible = false;
         this.parent.getChildByName('playAttack').visible = false;
         this.parent.parent.getChildByName('player').getChildByName('fangyu').visible = true;
         this.parent.parent.getChildByName('player').getChildByName('fangyu').play(0,true);

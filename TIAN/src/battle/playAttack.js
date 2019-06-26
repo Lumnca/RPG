@@ -15,6 +15,12 @@ export default class playAttack extends Laya.Sprite {
     onAwake(){
         this.visible = true;
         this.parent.getChildByName('playDefense').visible = true;
+        this.parent.getChildByName('skill1').visible = true;
+        this.parent.getChildByName('skill2').visible = true;
+        this.parent.getChildByName('skill3').visible = true;
+        this.parent.getChildByName('skill4').visible = true;
+        this.parent.getChildByName('skill5').visible = true;
+        this.parent.getChildByName('skill6').visible = true;
         this.once(Laya.Event.MOUSE_DOWN,this,this.attack);
         this.txt = this.parent.parent.getChildByName('infors').getChildByName('txt');
         this.pers = this.parent.parent.getChildByName('pres');
@@ -25,21 +31,62 @@ export default class playAttack extends Laya.Sprite {
         this.txt.text = '请选择目标';
         this.visible = false;
         this.parent.getChildByName('playDefense').visible = false;
+        this.parent.getChildByName('skill1').visible = false;
+        this.parent.getChildByName('skill2').visible = false;
+        this.parent.getChildByName('skill3').visible = false;
+        this.parent.getChildByName('skill4').visible = false;
+        this.parent.getChildByName('skill5').visible = false;
+        this.parent.getChildByName('skill6').visible = false;
         window.player.start = true;
     }
-    attackEmety(){
+    attackEmety(e){
         var hurt = 0;
-        if(window.player.shp<120){
-            this.txt.text = '使用绝命一击';
-            hurt = Math.floor( (Math.random()*200 + window.player.gj*5 ) * ( 1-window.emetys.fy/1000));
-            this.skillAttack1();
-        }
-        else{
+        if(e===0){
             this.txt.text = '使用普通攻击';
-            this.attack1();
-            hurt = Math.floor( (Math.random()*70 + window.player.gj ) * ( 1-window.emetys.fy/1000));
+            hurt = Math.floor( (Math.random()*100 + window.player.gj ) * ( 1-window.emetys.fy/1000));
+           this.attack1();
         }
+        else if(e===1){
+            this.txt.text = '使用雷雨风暴';
+            hurt = Math.floor( (Math.random()*1000 + window.player.gj*2 ) * ( 1-window.emetys.fy/1000));
+            window.skillType = 0;
+            this.skillAttack1();
 
+        }
+        else if(e===2){
+            this.txt.text = '使用流星零落';
+            hurt = Math.floor( (Math.random()*1000 + window.player.gj*3 ) * ( 1-window.emetys.fy/1000));
+            window.skillType = 0;
+            this.skillAttack2();
+
+        }
+        else if(e===3){
+            this.txt.text = '使用绝对石封';
+            hurt = Math.floor( (Math.random()*1700 + window.player.gj*3 ) * ( 1-window.emetys.fy/1000));
+            window.skillType = 0;
+            this.skillAttack3();
+
+        }
+        else if(e===4){
+            this.txt.text = '使用远古石剑';
+            hurt = Math.floor( (Math.random()*2000 + window.player.gj*4 ) * ( 1-window.emetys.fy/1000));
+            window.skillType = 0;
+            this.skillAttack4();
+
+        }
+        else if(e===5){
+            this.txt.text = '使用虹光旋风';
+            hurt = Math.floor( (Math.random()*1000 + window.player.gj*8 ) * ( 1-window.emetys.fy/1000));
+            window.skillType = 0;
+            this.skillAttack5();
+
+        }      
+        else if(e===6){
+            this.txt.text = '使用流光电闪';
+            hurt = Math.floor( (Math.random()*1500 + window.player.gj*12 ) * ( 1-window.emetys.fy/1000));
+            window.skillType = 0;
+            this.skillAttack6();
+        }
         Laya.timer.frameOnce(100,this,stop,[hurt]);
 
         function stop(hurt){
@@ -49,7 +96,7 @@ export default class playAttack extends Laya.Sprite {
 
             window.emetys.shp -= hurt;
 
-            window.emetys.ssp += 8;
+            window.emetys.ssp += 2;
             this.txt.text = '你对'+window.emetys.name + '造成了' +hurt + '点伤害';
             
             if( window.emetys.shp<=0){
@@ -67,16 +114,41 @@ export default class playAttack extends Laya.Sprite {
     //普通攻击
     attack1(){
         //播放音效
-        Laya.SoundManager.playSound('../laya/assets/music/playBattle/attack.mp3');
+        Laya.SoundManager.playSound('music/playBattle/attack.mp3');
         //攻击动画
         this.parent.parent.getChildByName("player").getChildByName('ani').play(0,false);
         this.parent.parent.getChildByName('pers').getChildByName('attacked').visible = true;
         this.parent.parent.getChildByName('pers').getChildByName('attacked').play(0,true,'attacked');
     }
     skillAttack1(){
-        Laya.SoundManager.playSound('../laya/assets/music/playBattle/skill1.mp3');
+        Laya.SoundManager.playSound('music/playBattle/skill1.mp3');
         this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
         this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false,'skill1');
+    }
+    skillAttack2(){
+        Laya.SoundManager.playSound('music/playBattle/zhu.mp3');
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false,'skill4');
+    }
+    skillAttack3(){
+        Laya.SoundManager.playSound('music/playBattle/shi.mp3');
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false,'skill8');
+    }
+    skillAttack4(){
+        Laya.SoundManager.playSound('music/playBattle/shi.mp3');
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false,'skill7');
+    }
+    skillAttack5(){
+        Laya.SoundManager.playSound('music/playBattle/guang.mp3');
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false,'skill6');
+    }
+    skillAttack6(){
+        Laya.SoundManager.playSound('music/playBattle/lei.mp3');
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false,'skill10');
     }
     playerWiner(){
         Laya.Scene.close('Battle.scene');

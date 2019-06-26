@@ -2,7 +2,7 @@
     "x":0,
     "type":"Scene",
     "selectedBox":2,
-    "selecteID":5,
+    "selecteID":9,
     "searchKey":"Scene",
     "props":{"width":960,"sceneColor":"#000000","height":720},
     "nodeParent":-1,
@@ -80,14 +80,13 @@
             "props":{"y":477,"x":892,"width":60,"runtime":"start/playmoving.js","pivotY":43,"pivotX":30,"name":"body","height":86},
             "nodeParent":2,
             "label":"body",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":5,
             "child":[
                 {
-                    "x":30,
                     "type":"Animation",
                     "searchKey":"Animation,player",
                     "props":{"y":43,"x":30,"source":"playMoving.ani","name":"player"},
@@ -101,7 +100,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"BoxCollider",
                     "switchAble":true,
                     "searchKey":"BoxCollider",
@@ -117,7 +115,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"RigidBody",
                     "switchAble":true,
                     "searchKey":"RigidBody",
@@ -137,7 +134,7 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,out2",
-            "props":{"y":39.5,"x":268,"name":"out2"},
+            "props":{"y":63,"x":303,"width":70,"pivotY":24,"pivotX":35,"name":"out2","height":47},
             "nodeParent":2,
             "label":"out2",
             "isOpen":false,
@@ -164,7 +161,7 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,out1",
-            "props":{"y":537.5,"x":822,"name":"out1"},
+            "props":{"y":561,"x":857,"width":70,"runtime":"doors/sence2/out2.js","pivotY":24,"pivotX":35,"name":"out1","height":47},
             "nodeParent":2,
             "label":"out1",
             "isOpen":false,

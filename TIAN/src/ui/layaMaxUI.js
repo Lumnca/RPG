@@ -122,6 +122,19 @@ var Sence2UI=(function(_super){
 		}
 		return Sence2UI;
 	})(Scene);
+var Sence3UI=(function(_super){
+		function Sence3UI(){
+			
+			Sence3UI.__super.call(this);
+		}
+		CLASS$(Sence3UI,'ui.sence.Sence3UI',_super);
+		var __proto__=Sence3UI.prototype;
+		__proto__.createChildren=function(){
+			_super.prototype.createChildren.call(this);
+			this.loadScene("sence/Sence3");
+		}
+		return Sence3UI;
+	})(Scene);
 var Sence1UI=(function(_super){
 		function Sence1UI(){
 			

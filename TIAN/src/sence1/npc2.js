@@ -24,7 +24,7 @@ export default class npc2 extends Laya.Sprite{
             this.parent.getChildByName('says').visible = true;
             this.txt.visible = true;
             window.player.positionInfor = 1;
-            this.txt.text = '小商贩:可以，你打败了我，这是你的奖励';
+            this.txt.text = '小商贩:可以，你打败了我，这个生日蛋糕就给你吧';
             this.parent.getChildByName('says').getChildByName('npc1').visible = false;
             Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.getThing);
             Laya.timer.clear(this,this.fail);
@@ -36,7 +36,8 @@ export default class npc2 extends Laya.Sprite{
             this.txt.visible = true;
             this.txt.text = '小商贩:看来你还是不够强，再去练练吧';
             this.parent.getChildByName('says').getChildByName('npc1').visible = false;
-            window.player.shp=500;
+            window.player.shp=1000;
+            window.player.smp=1000;
             Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.getThing);
             Laya.timer.clear(this,this.fail);
         }
@@ -75,7 +76,7 @@ export default class npc2 extends Laya.Sprite{
             this.txt.text = '小商人:'+'小兄弟需要买东西吗？';
         }
         else if(e==1){
-            this.txt.text = "1:我看看有什么  2:我再想想... (按下数值键选择)";
+            this.txt.text = "1:我要你的生日蛋糕  2:我再想想... (按下数值键选择)";
             this.player.visible = true;
             Laya.stage.off(Laya.Event.KEY_DOWN);
             Laya.stage.once(Laya.Event.KEY_DOWN,this,npcSelect);

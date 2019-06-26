@@ -15,12 +15,12 @@ export default class per1 extends Laya.Sprite {
     onAwake(){
 
         var emety = new Object();
-        emety.hp = 1000;
+        emety.hp = 10000;
         emety.sp = 100;
-        emety.mp = 200;
+        emety.mp = 2000;
         emety.ssp = 0;
-        emety.shp = 1000;
-        emety.smp = 200;
+        emety.shp = 10000;
+        emety.smp = 2000;
         emety.gj = 110;
         emety.fy = 60;
         emety.name = '小商贩';
@@ -40,8 +40,8 @@ export default class per1 extends Laya.Sprite {
         }
     }
     attackPlayer(){
-        if(window.emetys.start)
-        {
+    if(window.emetys.start)
+    {
 
             window.emetys.start = false;
             
@@ -51,7 +51,7 @@ export default class per1 extends Laya.Sprite {
 
                 this.parent.parent.getChildByName('infors').getChildByName('txt').text =window.emetys.name+  '使用了普通攻击';
 
-                var hurt = Math.floor((Math.random()*50+window.emetys.gj)*(1-(window.player.fy+window.player.battlefy)/1000));
+                var hurt = Math.floor((Math.random()*2000+window.emetys.gj)*(1-(window.player.fy+window.player.battlefy)/1000));
 
                 window.player.shp-=hurt;
 
@@ -59,20 +59,37 @@ export default class per1 extends Laya.Sprite {
                     window.player.shp = 0;
                 }
 
-                window.player.ssp+=12;
+                window.player.ssp+=2;
                 this.parent.parent.getChildByName('infors').getChildByName('txt').text = window.emetys.name+ '对你造成了' +hurt + '点伤害';
                 Laya.SoundManager.playSound('../laya/assets/music/playBattle/attack.mp3');
 
                 Laya.timer.frameOnce(100,this,this.stop);
 
-                if(window.emetys.shp>600){
-                    this.parent.parent.getChildByName('player').getChildByName('attacked').visible = true;
-                    this.parent.parent.getChildByName('player').getChildByName('attacked').play(0,true,'attacked');
-                }
-                else{
-                    this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
-                    this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,false,'skill2');
-                }
+                    if(hurt<500){
+                        this.parent.parent.getChildByName('player').getChildByName('attacked').visible = true;
+                        this.parent.parent.getChildByName('player').getChildByName('attacked').play(0,true,'attacked');
+                    }
+                    else if(hurt>=500&&hurt<1000){
+                        window.emetys.smp-=41;
+                        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+                        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,true,'skill3');
+                    }
+                    else if(hurt>=1000&&hurt<1500){
+                        window.emetys.smp-=64;
+                        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+                        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,true,'skill2');
+                    }
+                    else if(hurt>=1500&&hurt<1800){
+                        window.emetys.smp-=53;
+                        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+                        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,true,'skill5');
+                    }
+                    else{
+                        window.emetys.smp-=61;
+                        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').visible = true;
+                        this.parent.parent.getChildByName('globalSkill').getChildByName('skill1').play(0,true,'skill9');
+                    }
+                
             }
         }
         else{
@@ -107,7 +124,7 @@ export default class per1 extends Laya.Sprite {
     isAttacked(){
         if(window.player.start===true){
             window.player.start = false;
-            this.parent.parent.getChildByName('Select').getChildByName('playAttack').attackEmety();
+            this.parent.parent.getChildByName('Select').getChildByName('playAttack').attackEmety(window.skillType);
         }
 
     }

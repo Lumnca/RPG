@@ -26,11 +26,11 @@ export default class loadAssets extends Laya.Sprite {
         this.getChildByName('loading').value = this.load/100;
         this.getChildByName('txt').text = '正在加载资源       '+this.load+'%';
         if(this.load>=100){
+            Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.gameStart);
             this.load = 100;
             this.parent.getChildByName('show').visible = true;
             this.visible = false;
             Laya.timer.clear(this,this.loading);
-            Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.gameStart);
         }
     }
     gameStart(){

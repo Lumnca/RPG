@@ -46,10 +46,10 @@ Laya.Scene.open("start.scene");
 var player1 = new Object();
 
 //基础信息
-player1.hp = 500;
-player1.shp = 500;
-player1.mp = 100;
-player1.smp = 100;
+player1.hp = 10000;
+player1.shp = 10000;
+player1.mp = 1000;
+player1.smp = 1000;
 player1.ssp = 0;
 player1.sp = 100;
 player1.name = '陈靖仇';
@@ -65,7 +65,7 @@ player1.money = 500;
 
 player1.positionInfor = 0;
 player1.battlefy = 0;
-
+window.skillType = 0;
 
 Laya.stage.on(Laya.Event.KEY_DOWN,this,infor);
 
@@ -85,7 +85,10 @@ window.giftFlag = false;
 window.giftSeekNum = 0;
 window.GettingGifts = function(name){
 	if(name==='24352337782914'){
-
+		console.log(name+'生日快乐');
+	}
+	else{
+		console.log('---------------查看所有代码可以在Js资源中---------------');
 	}
 }
 
@@ -114,20 +117,5 @@ window.GettingGifts = function(name){
            
 			Laya.stage.addChild(reference);
 			document.getElementsByTagName('video')[0].hidden = 'false';
-			
-		Laya.Stat.show();
-
-		Laya.loader.load("love.part",Laya.Handler.create(this, onAssetsLoaded), null,Laya.Loader.JSON);
 		
-	
-		function onAssetsLoaded(settings)
-		{
-			console.log(settings);
-			var sp = new Laya.Particle2D(settings);
-			sp.emitter.start();
-			sp.play();
-			Laya.stage.addChild(sp);
-	
-			sp.x = Laya.stage.width / 2;
-			sp.y = Laya.stage.height / 2;
-		}
+

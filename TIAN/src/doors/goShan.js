@@ -18,7 +18,9 @@ export default class goShan extends Laya.Sprite {
     }
     out(){
         if(Math.abs(this.x-this.player.x)<30&&Math.abs(this.y-this.player.y)<20){
-            window.player.positionInfor = 1;
+            window.player.x = this.player.x+30;
+            window.player.y = this.player.y+35;
+           // window.player.positionInfor = 1;
             Laya.timer.clearAll(this);
             Laya.Scene.open("sence/Sence2.scene");
         }
