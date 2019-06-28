@@ -26,7 +26,7 @@ export default class doors extends Laya.Sprite {
             Laya.timer.clearAll(this);
             //Laya.Scene.closeAll();
             Laya.Scene.open('Sence1House1.scene');
-
+            Laya.SoundManager.playMusic('music/bg/g1.mp3');
         }
     }
     onEnable() {

@@ -13,7 +13,7 @@ export default class per1 extends Laya.Sprite {
         // 更多参数说明请访问: https://ldc2.layabox.com/doc/?nav=zh-as-2-4-0
     }
     onAwake(){
-
+        Laya.SoundManager.playMusic('music/bg/zd.mp3');
         var emety = new Object();
         emety.hp = 10000;
         emety.sp = 100;
@@ -61,7 +61,7 @@ export default class per1 extends Laya.Sprite {
 
                 window.player.ssp+=2;
                 this.parent.parent.getChildByName('infors').getChildByName('txt').text = window.emetys.name+ '对你造成了' +hurt + '点伤害';
-                Laya.SoundManager.playSound('../laya/assets/music/playBattle/attack.mp3');
+                Laya.SoundManager.playSound('music/playBattle/attack.mp3');
 
                 Laya.timer.frameOnce(100,this,this.stop);
 

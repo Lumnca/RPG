@@ -166,7 +166,6 @@ P 79D91C73 chapter.png
 P 54E84470 logn.png
 R 299726F7 StartBg.png
 D texiao
-R 21C6DCFB .rec
 P 2F56E583 attack1_0 (1).png
 P 7514963B attack1_0 (2).png
 P 78A07077 attack1_0 (3).png
@@ -183,46 +182,6 @@ P BE2A1FAC comp1_00006.png
 P 6EE2A45E comp1_00007.png
 P CAABD1B9 comp1_00008.png
 P FD70A4EA comp1_00009.png
-R 45DD535B skill_1.atlas
-R 38A47E5D skill_1.png
-R ED65D746 skill_10.atlas
-R E9A15A93 skill_10.png
-R 5666ADEC skill_101.png
-R E0527E0F skill_102.png
-R 6E345251 skill_103.png
-R 7D8C19DB skill_104.png
-R 71399CA0 skill_11.png
-R 95E4803A skill_12.png
-R E98B0863 skill_13.png
-R DBBD8A24 skill_2.atlas
-R CB126F08 skill_2.png
-R 5A984702 skill_3.atlas
-R 925FB3B1 skill_3.png
-R 8A775F77 skill_4.atlas
-R 3FBF00FA skill_4.png
-R B0A2A9D3 skill_41.png
-R A52C74DB skill_42.png
-R E7E42A39 skill_43.png
-R 64B0B666 skill_5.atlas
-R 71D4D1C3 skill_5.png
-R BC074B5B skill_6.atlas
-R 61BF297C skill_6.png
-R EE79BB88 skill_61.png
-R A7EDF680 skill_62.png
-R B488EF0E skill_7.atlas
-R EF0764E3 skill_7.png
-R 25A059AA skill_71.png
-R 5EDFD740 skill_72.png
-R 98BFB349 skill_73.png
-R 52E5A620 skill_8.atlas
-R A8E21C3C skill_8.png
-R 82EBE9D5 skill_81.png
-R 39004BF0 skill_82.png
-R B1D09BC1 skill_9.atlas
-R 3DF2219D skill_9.png
-R DAEFDFEE skill_91.png
-R ACECACE4 skill_92.png
-R F8A13725 skill_93.png
 D zhandou
 R 8F88F4AB bg1.png
 P AC233FB1 choise.png

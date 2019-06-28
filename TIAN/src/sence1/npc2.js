@@ -28,6 +28,7 @@ export default class npc2 extends Laya.Sprite{
             this.parent.getChildByName('says').getChildByName('npc1').visible = false;
             Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.getThing);
             Laya.timer.clear(this,this.fail);
+            Laya.SoundManager.playMusic("music/bg/sence1bg.mp3");
         }
         else if(window.npcInfor===2){
             window.player.battlefy = 0;
@@ -40,7 +41,9 @@ export default class npc2 extends Laya.Sprite{
             window.player.smp=1000;
             Laya.stage.once(Laya.Event.MOUSE_DOWN,this,this.getThing);
             Laya.timer.clear(this,this.fail);
+            Laya.SoundManager.playMusic("music/bg/sence1bg.mp3");
         }
+        
     }
     getThing(){
         this.parent.getChildByName('says').visible = false;

@@ -119,3 +119,12 @@ window.GettingGifts = function(name){
 			Laya.loader.load("sence/gift2.scene");
 			Laya.loader.load("sence/gift3.scene");
 			Laya.loader.load("music/bg/startBg.mp3");
+			Laya.loader.load("music/bg/sence1Bg.mp3");
+			Laya.loader.load("music/bg/zd.mp3");
+			Laya.loader.load("music/bg/g1.mp3");
+			Laya.loader.load("music/playBattle/attack.mp3");
+			Laya.loader.load("music/playBattle/lei.mp3");
+			Laya.loader.load("music/playBattle/shi.mp3");
+			Laya.loader.load("music/playBattle/skill1.mp3");
+			Laya.loader.load("music/playBattle/zhu.mp3");
+			Laya.loader.load("music/playBattle/guang.mp3");
