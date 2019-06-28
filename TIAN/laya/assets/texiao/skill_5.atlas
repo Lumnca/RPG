@@ -1,0 +1,110 @@
+{
+    "frames": {
+        "398-1.jpg": {
+            "frame": {
+                "h": 671,
+                "idx": 0,
+                "w": 984,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 671,
+                "w": 984
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "398-2.jpg": {
+            "frame": {
+                "h": 671,
+                "idx": 0,
+                "w": 984,
+                "x": 985,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 671,
+                "w": 984
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "398-3.jpg": {
+            "frame": {
+                "h": 671,
+                "idx": 0,
+                "w": 984,
+                "x": 0,
+                "y": 672
+            },
+            "sourceSize": {
+                "h": 671,
+                "w": 984
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "398-4.jpg": {
+            "frame": {
+                "h": 671,
+                "idx": 0,
+                "w": 984,
+                "x": 0,
+                "y": 1344
+            },
+            "sourceSize": {
+                "h": 671,
+                "w": 984
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "398-5.jpg": {
+            "frame": {
+                "h": 671,
+                "idx": 0,
+                "w": 984,
+                "x": 985,
+                "y": 672
+            },
+            "sourceSize": {
+                "h": 671,
+                "w": 984
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "398-6.jpg": {
+            "frame": {
+                "h": 671,
+                "idx": 0,
+                "w": 984,
+                "x": 985,
+                "y": 1344
+            },
+            "sourceSize": {
+                "h": 671,
+                "w": 984
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "meta": {
+        "image": "skill_5.png",
+        "prefix": "skill_5/"
+    }
+}

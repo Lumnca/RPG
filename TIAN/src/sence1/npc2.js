@@ -89,7 +89,7 @@ export default class npc2 extends Laya.Sprite{
                     this.parent.getChildByName('says').visible = false;
                     this.parent.getChildByName("body").onAwake();
                     Laya.stage.on(Laya.Event.KEY_DOWN,this,infor);
-                    Laya.Scene.open("Battle.scene");
+                    Laya.Scene.open("load.scene");
                     function infor(e){
                         var i =e["keyCode"];
                         if(i==1){

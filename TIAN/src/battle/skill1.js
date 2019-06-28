@@ -14,7 +14,7 @@ export default class skill1 extends Laya.Sprite {
     }
     onAwake(){
         this.visible = true;
-        this.once(Laya.Event.MOUSE_DOWN,this,this.attack);
+        this.on(Laya.Event.MOUSE_DOWN,this,this.attack);
         this.txt = this.parent.parent.getChildByName('infors').getChildByName('txt');
         this.pers = this.parent.parent.getChildByName('pres');
 

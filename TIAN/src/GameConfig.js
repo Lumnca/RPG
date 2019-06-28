@@ -11,6 +11,7 @@ import player from "./battle/player"
 import per1 from "./battle/per1"
 import close from "./player/close"
 import playerInfor from "./start/playerInfor"
+import loadBattle from "./start/loadBattle"
 import closeGift1 from "./gift/closeGift1"
 import viedoShow from "./gift/viedoShow"
 import closeViedo from "./gift/closeViedo"
@@ -53,6 +54,7 @@ export default class GameConfig {
 		reg("battle/per1.js",per1);
 		reg("player/close.js",close);
 		reg("start/playerInfor.js",playerInfor);
+		reg("start/loadBattle.js",loadBattle);
 		reg("gift/closeGift1.js",closeGift1);
 		reg("gift/viedoShow.js",viedoShow);
 		reg("gift/closeViedo.js",closeViedo);
@@ -62,7 +64,6 @@ export default class GameConfig {
 		reg("doors/sence1/outhouse2.js",outhouse2);
 		reg("doors/sence1/inhouse2.js",inhouse2);
 		reg("doors/sence1/outhouse_2.js",outhouse_2);
-		reg("doors/sence2/out2.js",out2);
 		reg("sence1/npc1.js",npc1);
 		reg("sence1/doors.js",doors);
 		reg("sence1/npc2.js",npc2);

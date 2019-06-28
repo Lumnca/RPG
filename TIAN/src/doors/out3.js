@@ -34,7 +34,7 @@ export default class out3 extends Laya.Sprite {
         this.says.visible = false;
         this.says.getChildByName('player').visible = false;
         this.player.x+=25;
-        this.player.y+=35;
+        this.player.y+=75;
         this.player.onAwake();
     }
     onEnable() {

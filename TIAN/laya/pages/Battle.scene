@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":33,
-    "selecteID":57,
+    "selectedBox":2,
+    "selecteID":59,
     "searchKey":"Scene",
     "props":{"width":1280,"sceneColor":"#000000","height":600},
     "nodeParent":-1,
-    "maxID":59,
+    "maxID":62,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -36,14 +36,13 @@
             "props":{"zOrder":6,"y":0,"x":0,"name":"Select"},
             "nodeParent":2,
             "label":"Select",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":33,
             "child":[
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,playAttack",
                     "props":{"y":100.5,"x":968,"runtime":"battle/playAttack.js","name":"playAttack"},
@@ -71,7 +70,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,playDefense",
                     "props":{"zOrder":9,"y":100.5,"x":1101.5,"runtime":"battle/playDefense.js","name":"playDefense","height":30},
@@ -99,7 +97,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,skill1",
                     "props":{"y":158,"x":968,"runtime":"battle/skill1.js","name":"skill1"},
@@ -127,7 +124,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,skill2",
                     "props":{"y":158,"x":1101.5,"runtime":"battle/skill2.js","name":"skill2"},
@@ -155,7 +151,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,skill4",
                     "props":{"y":219,"x":1101.5,"runtime":"battle/skill4.js","name":"skill4"},
@@ -183,7 +178,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,skill5",
                     "props":{"y":281.5,"x":968,"runtime":"battle/skill5.js","name":"skill5"},
@@ -211,7 +205,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,skill3",
                     "props":{"y":219,"x":968,"runtime":"battle/skill3.js","name":"skill3"},
@@ -239,7 +232,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,skill6",
                     "props":{"y":281.5,"x":1101.5,"runtime":"battle/skill6.js","name":"skill6"},

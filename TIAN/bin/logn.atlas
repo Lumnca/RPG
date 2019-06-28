@@ -1,0 +1,42 @@
+{
+    "frames": {
+        "talk1.png": {
+            "frame": {
+                "h": 23,
+                "idx": 0,
+                "w": 27,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 32,
+                "w": 32
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 5
+            }
+        },
+        "talk2.png": {
+            "frame": {
+                "h": 25,
+                "idx": 0,
+                "w": 29,
+                "x": 28,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 32,
+                "w": 32
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 3
+            }
+        }
+    },
+    "meta": {
+        "image": "logn.png",
+        "prefix": "logn/"
+    }
+}

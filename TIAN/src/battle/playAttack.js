@@ -87,6 +87,11 @@ export default class playAttack extends Laya.Sprite {
             window.skillType = 0;
             this.skillAttack6();
         }
+        else{
+            this.txt.text = '使用普通攻击';
+            hurt = Math.floor( (Math.random()*100 + window.player.gj ) * ( 1-window.emetys.fy/1000));
+           this.attack1();  
+        }
         Laya.timer.frameOnce(100,this,stop,[hurt]);
 
         function stop(hurt){

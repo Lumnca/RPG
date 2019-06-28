@@ -1,0 +1,42 @@
+{
+    "frames": {
+        "npc1.png": {
+            "frame": {
+                "h": 156,
+                "idx": 0,
+                "w": 129,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 160,
+                "w": 160
+            },
+            "spriteSourceSize": {
+                "x": 21,
+                "y": 3
+            }
+        },
+        "play1.png": {
+            "frame": {
+                "h": 159,
+                "idx": 0,
+                "w": 131,
+                "x": 130,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 160,
+                "w": 145
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "meta": {
+        "image": "say.png",
+        "prefix": "say/"
+    }
+}

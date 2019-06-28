@@ -1,0 +1,42 @@
+{
+    "frames": {
+        "npc1.png": {
+            "frame": {
+                "h": 135,
+                "idx": 0,
+                "w": 240,
+                "x": 364,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 135,
+                "w": 240
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "npc2.png": {
+            "frame": {
+                "h": 425,
+                "idx": 0,
+                "w": 363,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 425,
+                "w": 363
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "meta": {
+        "image": "sence1.png",
+        "prefix": "npc/sence1/"
+    }
+}

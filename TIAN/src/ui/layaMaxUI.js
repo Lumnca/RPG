@@ -31,6 +31,19 @@ var inforUI=(function(_super){
 		}
 		return inforUI;
 	})(Dialog);
+var loadUI=(function(_super){
+		function loadUI(){
+			
+			loadUI.__super.call(this);
+		}
+		CLASS$(loadUI,'ui.loadUI',_super);
+		var __proto__=loadUI.prototype;
+		__proto__.createChildren=function(){
+			_super.prototype.createChildren.call(this);
+			this.loadScene("load");
+		}
+		return loadUI;
+	})(Scene);
 var sayUI=(function(_super){
 		function sayUI(){
 			

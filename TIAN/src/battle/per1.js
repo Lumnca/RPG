@@ -51,7 +51,7 @@ export default class per1 extends Laya.Sprite {
 
                 this.parent.parent.getChildByName('infors').getChildByName('txt').text =window.emetys.name+  '使用了普通攻击';
 
-                var hurt = Math.floor((Math.random()*2000+window.emetys.gj)*(1-(window.player.fy+window.player.battlefy)/1000));
+                var hurt = Math.floor((Math.random()*2200+window.emetys.gj)*(1-(window.player.fy+window.player.battlefy)/1000));
 
                 window.player.shp-=hurt;
 

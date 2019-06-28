@@ -111,11 +111,11 @@ window.GettingGifts = function(name){
             reference.pos(10, 10);
             reference.size(1200, 750);
             reference.graphics.drawRect(0, 0, reference.width, reference.height, "#000000");
-    
             // 每次舞台尺寸变更时，都会调用Utils.fitDOMElementInArea设置Video的位置，对齐的位置和refence重合
             Laya.stage.on(Laya.Event.RESIZE, this, Laya.Utils.fitDOMElementInArea, [videoElement, reference, 0, 0, reference.width, reference.height]);
-           
 			Laya.stage.addChild(reference);
 			document.getElementsByTagName('video')[0].hidden = 'false';
-		
-
+			Laya.loader.load("sence/gift1.scene");
+			Laya.loader.load("sence/gift2.scene");
+			Laya.loader.load("sence/gift3.scene");
+			Laya.loader.load("music/bg/startBg.mp3");

@@ -32,6 +32,12 @@ export default class loadAssets extends Laya.Sprite {
             this.visible = false;
             Laya.timer.clear(this,this.loading);
         }
+        else if(this.load>0&&this.load<50){
+            this.getChildByName('txt').text = '请将浏览器窗口调成1200*960才能正常运行 '+this.load+'%';
+        }
+        else if(this.load>=50&&this.load<100){
+            this.getChildByName('txt').text = '点击鼠标右键移动人物，左键触发对话  '+this.load+'%';
+        }
     }
     gameStart(){
         Laya.SoundManager.playMusic("music/bg/startBg.mp3");

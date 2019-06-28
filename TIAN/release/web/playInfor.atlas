@@ -1,0 +1,110 @@
+{
+    "frames": {
+        "gj.png": {
+            "frame": {
+                "h": 29,
+                "idx": 0,
+                "w": 29,
+                "x": 0,
+                "y": 32
+            },
+            "sourceSize": {
+                "h": 30,
+                "w": 31
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "hp.png": {
+            "frame": {
+                "h": 22,
+                "idx": 0,
+                "w": 24,
+                "x": 49,
+                "y": 30
+            },
+            "sourceSize": {
+                "h": 26,
+                "w": 29
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        "mf.png": {
+            "frame": {
+                "h": 29,
+                "idx": 0,
+                "w": 27,
+                "x": 25,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 30,
+                "w": 31
+            },
+            "spriteSourceSize": {
+                "x": 1,
+                "y": 1
+            }
+        },
+        "money.png": {
+            "frame": {
+                "h": 26,
+                "idx": 0,
+                "w": 26,
+                "x": 53,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 26,
+                "w": 26
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "sp.png": {
+            "frame": {
+                "h": 30,
+                "idx": 0,
+                "w": 18,
+                "x": 30,
+                "y": 30
+            },
+            "sourceSize": {
+                "h": 35,
+                "w": 24
+            },
+            "spriteSourceSize": {
+                "x": 3,
+                "y": 2
+            }
+        },
+        "wfu.png": {
+            "frame": {
+                "h": 31,
+                "idx": 0,
+                "w": 24,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 33,
+                "w": 31
+            },
+            "spriteSourceSize": {
+                "x": 3,
+                "y": 2
+            }
+        }
+    },
+    "meta": {
+        "image": "playInfor.png",
+        "prefix": "playInfor/"
+    }
+}
